@@ -1,0 +1,42 @@
+{
+  "name": "@expenseapp.io/design-system",
+  "version": "0.0.1",
+  "description": "Design system for the ExpenseApp product",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/expenseapp-io/design-system.git"
+  },
+  "keywords": [
+    "design-system"
+  ],
+  "author": "Pavel Keyzik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/expenseapp-io/design-system/issues"
+  },
+  "homepage": "https://github.com/expenseapp-io/design-system#readme",
+  "dependencies": {
+    "postcss": "8.4.23",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rollup": "3.21.7",
+    "rollup-plugin-postcss": "4.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "25.0.0",
+    "@rollup/plugin-node-resolve": "15.0.2",
+    "@rollup/plugin-typescript": "11.1.1",
+    "@types/react": "18.2.6",
+    "@types/react-dom": "18.2.4",
+    "sass": "1.62.1",
+    "tslib": "2.5.0",
+    "typescript": "5.0.4"
+  }
+}
