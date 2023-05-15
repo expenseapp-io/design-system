@@ -8,6 +8,7 @@
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:style": "stylelint \"src/**/*.{css,scss}\"",
     "prepare": "husky install"
   },
   "repository": {
@@ -43,7 +44,12 @@
     "eslint": "8.40.0",
     "eslint-plugin-react": "7.32.2",
     "husky": "8.0.0",
+    "lint-staged": "13.2.2",
     "sass": "1.62.1",
+    "stylelint": "15.6.1",
+    "stylelint-config-clean-order": "5.0.1",
+    "stylelint-config-css-modules": "4.2.0",
+    "stylelint-config-standard-scss": "9.0.0",
     "tslib": "2.5.0",
     "typescript": "5.0.4"
   }

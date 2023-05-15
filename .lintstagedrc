@@ -1,0 +1,8 @@
+{
+  "*.{ts,tsx}": [
+    "eslint --fix --no-ignore --max-warnings=0"
+  ],
+  "*.{css,scss}": [
+    "stylelint --fix --max-warnings=0"
+  ]
+}

@@ -8,7 +8,7 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [x] TypeScript
 - [x] SCSS
 - [x] ESLint
-- [ ] Stylelint
+- [x] Stylelint
 - [x] Husky
 - [x] Commitlint
 - [ ] Changelog
