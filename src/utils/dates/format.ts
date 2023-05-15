@@ -1,3 +1,3 @@
 export function formatDate() {
-  return "formatted date UPDATED";
+	return "formatted date UPDATED";
 }
