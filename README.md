@@ -9,8 +9,8 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [x] SCSS
 - [ ] ESLint
 - [ ] Stylelint
-- [ ] Husky
-- [ ] Commitlint
+- [x] Husky
+- [x] Commitlint
 - [ ] Changelog
 - [ ] Tests
 - [ ] GitHub Actions
