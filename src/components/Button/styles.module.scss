@@ -1,7 +1,14 @@
-$red: blue;
+$background: black;
+$foreground: white;
 
 .button {
   position: relative;
   top: 0;
-  background: $red;
+
+  padding: 8px 12px;
+
+  color: $foreground;
+
+  background: $background;
+  border: none;
 }
