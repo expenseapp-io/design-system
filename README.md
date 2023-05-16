@@ -14,4 +14,4 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [ ] Changelog
 - [ ] Tests
 - [ ] GitHub Actions
-- [ ] Storybook or alternatives
+- [x] Storybook

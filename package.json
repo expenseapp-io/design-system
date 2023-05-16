@@ -9,7 +9,9 @@
     "dev": "rollup -c -w",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:style": "stylelint \"src/**/*.{css,scss}\"",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -25,6 +27,7 @@
   },
   "homepage": "https://github.com/expenseapp-io/design-system#readme",
   "dependencies": {
+    "classnames": "2.3.2",
     "postcss": "8.4.23",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -37,20 +40,35 @@
     "@rollup/plugin-commonjs": "25.0.0",
     "@rollup/plugin-node-resolve": "15.0.2",
     "@rollup/plugin-typescript": "11.1.1",
+    "@storybook/addon-essentials": "7.0.12",
+    "@storybook/addon-interactions": "7.0.12",
+    "@storybook/addon-links": "7.0.12",
+    "@storybook/blocks": "7.0.12",
+    "@storybook/react": "7.0.12",
+    "@storybook/react-vite": "7.0.12",
+    "@storybook/testing-library": "^0.0.14-next.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
     "@typescript-eslint/eslint-plugin": "5.59.6",
     "@typescript-eslint/parser": "5.59.6",
     "eslint": "8.40.0",
     "eslint-plugin-react": "7.32.2",
+    "eslint-plugin-storybook": "0.6.12",
     "husky": "8.0.0",
     "lint-staged": "13.2.2",
+    "prop-types": "15.8.1",
     "sass": "1.62.1",
+    "storybook": "7.0.12",
     "stylelint": "15.6.1",
     "stylelint-config-clean-order": "5.0.1",
     "stylelint-config-css-modules": "4.2.0",
     "stylelint-config-standard-scss": "9.0.0",
     "tslib": "2.5.0",
     "typescript": "5.0.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
