@@ -1,9 +1,9 @@
 {
-  "name": "@expenseapp.io/design-system",
+  "name": "@expenseapp-io/design-system",
   "version": "0.0.1",
   "description": "Design system for the ExpenseApp product",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
@@ -14,7 +14,9 @@
     "test:coverage": "vitest run --coverage",
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "release": "auto shipit",
+    "release:canary": "auto canary"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,9 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
+    "@auto-it/all-contributors": "10.46.0",
+    "@auto-it/conventional-commits": "10.46.0",
+    "@auto-it/first-time-contributor": "10.46.0",
     "@commitlint/cli": "17.6.3",
     "@commitlint/config-conventional": "17.6.3",
     "@rollup/plugin-commonjs": "25.0.0",
@@ -52,6 +57,7 @@
     "@typescript-eslint/eslint-plugin": "5.59.6",
     "@typescript-eslint/parser": "5.59.6",
     "@vitest/coverage-c8": "0.31.0",
+    "auto": "10.46.0",
     "eslint": "8.40.0",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-storybook": "0.6.12",

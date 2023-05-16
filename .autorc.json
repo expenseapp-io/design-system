@@ -1,0 +1,19 @@
+{
+	"owner": "expenseapp-io",
+	"repo": "design-system",
+	"plugins": [
+		"npm",
+		[
+			"all-contributors",
+			{
+				"exclude": ["dependabot"]
+			}
+		],
+		"conventional-commits",
+		"first-time-contributor",
+		"released"
+	],
+	"author": "Pavel Keyzik <pavel.keyzik@gmail.com>",
+	"noVersionPrefix": true,
+	"prereleaseBranches": ["next"]
+}
