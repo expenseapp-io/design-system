@@ -1,3 +1,15 @@
+# 0.0.2 (Tue May 16 2023)
+
+#### 🐛 Bug Fix
+
+- Add TypeScript declarations [#3](https://github.com/expenseapp-io/design-system/pull/3) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # (Tue May 16 2023)
 
 :tada: This release contains work from a new contributor! :tada:
