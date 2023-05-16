@@ -4,11 +4,12 @@
   "description": "Design system for the ExpenseApp product",
   "type": "module",
   "main": "dist/main.js",
+  "types": "dist/src/main.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rimraf dist && rollup -c",
     "dev": "rollup -c -w",
     "lint": "eslint \"**/*.{ts,tsx}\"",
     "lint:style": "stylelint \"src/**/*.{css,scss}\"",
@@ -68,6 +69,7 @@
     "lint-staged": "13.2.2",
     "postcss": "8.4.23",
     "prop-types": "15.8.1",
+    "rimraf": "5.0.0",
     "rollup": "3.21.8",
     "rollup-plugin-copy": "3.4.0",
     "rollup-plugin-postcss": "4.0.2",

@@ -2,7 +2,6 @@ import typescript from "@rollup/plugin-typescript";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import postcss from "rollup-plugin-postcss";
-import copy from "rollup-plugin-copy";
 
 export default {
 	input: [
@@ -19,13 +18,5 @@ export default {
 		postcss({
 			plugins: []
 		}),
-		copy({
-			targets: [
-				{
-					src: "package.json",
-					dest: "dist"
-				}
-			]
-		})
 	]
 };

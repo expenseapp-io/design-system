@@ -25,4 +25,4 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
   - [ ] Deploy Storybook
 - [x] Storybook
 - [x] EditorConfig
-- [ ] TypeScript definitions
+- [x] TypeScript definitions
