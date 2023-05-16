@@ -16,3 +16,4 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [x] Coverage
 - [ ] GitHub Actions
 - [x] Storybook
+- [x] EditorConfig

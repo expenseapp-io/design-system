@@ -6,7 +6,7 @@ import { Button } from "../components/Button";
 const meta = {
 	title: "Components/Button",
 	component: Button,
-	
+
 } satisfies Meta<typeof Button>;
 
 export default meta;
