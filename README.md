@@ -14,6 +14,14 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [ ] Changelog
 - [x] Tests
 - [x] Coverage
+- [ ] .gitattributes
 - [ ] GitHub Actions
+  - [ ] Run lint
+  - [ ] Run tests
+  - [ ] Run coverage
+  - [ ] Run size-limit
+  - [ ] Publish canary package
+  - [ ] Publish release package
+  - [ ] Deploy Storybook
 - [x] Storybook
 - [x] EditorConfig

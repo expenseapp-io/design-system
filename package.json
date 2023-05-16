@@ -31,11 +31,8 @@
   "homepage": "https://github.com/expenseapp-io/design-system#readme",
   "dependencies": {
     "classnames": "2.3.2",
-    "postcss": "8.4.23",
     "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "rollup": "3.21.7",
-    "rollup-plugin-postcss": "4.0.2"
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.3",
@@ -60,7 +57,10 @@
     "eslint-plugin-storybook": "0.6.12",
     "husky": "8.0.0",
     "lint-staged": "13.2.2",
+    "postcss": "8.4.23",
     "prop-types": "15.8.1",
+    "rollup": "3.21.8",
+    "rollup-plugin-postcss": "4.0.2",
     "sass": "1.62.1",
     "storybook": "7.0.12",
     "stylelint": "15.6.1",
@@ -70,10 +70,5 @@
     "tslib": "2.5.0",
     "typescript": "5.0.4",
     "vitest": "0.31.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "plugin:storybook/recommended"
-    ]
   }
 }
