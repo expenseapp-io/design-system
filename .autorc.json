@@ -11,7 +11,7 @@
 		],
 		"conventional-commits",
 		"first-time-contributor",
-		"released"
+    "released"
 	],
 	"author": "Pavel Keyzik <pavel.keyzik@gmail.com>",
 	"noVersionPrefix": true,

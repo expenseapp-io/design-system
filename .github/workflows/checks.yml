@@ -1,0 +1,39 @@
+name: Checks
+
+on:
+  workflow_call:
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - unlocked
+  push:
+    branches:
+      - main
+      - next
+
+jobs:
+  code-quality:
+    name: Check Code Quality
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.2
+      - name: Change Node.js Version
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 18.16.0
+      - name: Cache node_modules
+        uses: actions/cache@v3.3.1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+      - run: npm ci
+      - name: ESLint
+        run: npm run lint
+      - name: Stylelint
+        run: npm run lint:style
+      - name: Tests
+        run: npm run test
