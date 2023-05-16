@@ -1,6 +1,6 @@
 {
   "name": "@expenseapp-io/design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Design system for the ExpenseApp product",
   "type": "module",
   "main": "dist/main.js",
