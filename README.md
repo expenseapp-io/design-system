@@ -12,6 +12,7 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [x] Husky
 - [x] Commitlint
 - [ ] Changelog
-- [ ] Tests
+- [x] Tests
+- [x] Coverage
 - [ ] GitHub Actions
 - [x] Storybook
