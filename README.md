@@ -22,6 +22,7 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
   - [ ] Run size-limit
   - [x] Publish canary package
   - [x] Publish release package
+  - [x] Code Climate
   - [ ] Deploy Storybook
 - [x] Storybook
 - [x] EditorConfig
