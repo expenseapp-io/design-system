@@ -18,7 +18,7 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [x] GitHub Actions
   - [x] Run lint
   - [x] Run tests
-  - [ ] Run coverage
+  - [x] Run coverage
   - [ ] Run size-limit
   - [x] Publish canary package
   - [x] Publish release package
