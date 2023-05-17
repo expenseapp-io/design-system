@@ -11,7 +11,7 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
 - [x] Stylelint
 - [x] Husky
 - [x] Commitlint
-- [ ] Changelog
+- [x] Changelog
 - [x] Tests
 - [x] Coverage
 - [ ] .gitattributes
@@ -19,7 +19,7 @@ Design System Libary for our ExpenseApp. As it's in early development, you can u
   - [x] Run lint
   - [x] Run tests
   - [x] Run coverage
-  - [ ] Run size-limit
+  - [x] Run size-limit
   - [x] Publish canary package
   - [x] Publish release package
   - [x] Code Climate

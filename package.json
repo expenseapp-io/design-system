@@ -20,7 +20,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "release": "auto shipit",
-    "release:canary": "auto canary"
+    "release:canary": "auto canary",
+    "size": "size-limit"
   },
   "repository": {
     "type": "git",
@@ -49,6 +50,7 @@
     "@rollup/plugin-commonjs": "25.0.0",
     "@rollup/plugin-node-resolve": "15.0.2",
     "@rollup/plugin-typescript": "11.1.1",
+    "@size-limit/preset-big-lib": "8.2.4",
     "@storybook/addon-essentials": "7.0.12",
     "@storybook/addon-interactions": "7.0.12",
     "@storybook/addon-links": "7.0.12",
@@ -74,6 +76,7 @@
     "rollup-plugin-copy": "3.4.0",
     "rollup-plugin-postcss": "4.0.2",
     "sass": "1.62.1",
+    "size-limit": "8.2.4",
     "storybook": "7.0.12",
     "stylelint": "15.6.1",
     "stylelint-config-clean-order": "5.0.1",
