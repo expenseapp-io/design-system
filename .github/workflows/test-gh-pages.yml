@@ -1,0 +1,30 @@
+name: Test GitHub Pages
+
+on:
+  pull_request:
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3.5.2
+      - name: Change Node.js Version
+        uses: actions/setup-node@v3.6.0
+        with:
+          node-version: 18.16.0
+      - name: Cache node_modules
+        uses: actions/cache@v3.3.1
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+      - run: npm ci
+      - name: Build Storybook
+        run: npm run build-storybook
+      - name: Publish Storybook
+        uses: peaceiris/actions-gh-pages@v3.9.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./storybook-static
