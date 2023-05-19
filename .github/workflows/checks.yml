@@ -41,3 +41,10 @@ jobs:
         run: npm run build
       - name: Check size-limit
         run: npm run size
+      - name: Check conditionals
+        run: |
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "Run check for Pull Request"
+          else
+            echo "Run check for push"
+          fi
