@@ -30,7 +30,9 @@ jobs:
             ${{ runner.os }}-npm-
       - run: npm ci
       - run: npm run build
-      - run: npm run release:canary -- --pr ${{ inputs.prId }} --target comment
+      - run: |
+          git fetch --tags --quiet
+          npm run release:canary -- --pr ${{ inputs.prId }} --target comment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

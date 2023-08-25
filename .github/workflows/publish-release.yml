@@ -28,7 +28,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-
       - run: npm ci
-      - run: npm run release
+      - run: |
+          git fetch --tags --quiet
+          npm run release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
