@@ -30,7 +30,8 @@ jobs:
       - run: npm ci
       - run: |
           git fetch --tags --quiet
-          npm run release
+          npm run release -- --prerelease=${PRE_RELEASE}
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          PRE_RELEASE: ${{ github.ref == 'refs/heads/next' }}
