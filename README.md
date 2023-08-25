@@ -2,6 +2,10 @@
 
 Design System Libary for our ExpenseApp. As it's in early development, you can use it as boilerplate if you want. Let us know if you see any issues 😂
 
+## Testing a new major release
+
+First test
+
 ## Features
 
 - [x] React
