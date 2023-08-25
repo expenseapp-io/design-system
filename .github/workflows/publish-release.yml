@@ -1,14 +1,10 @@
 name: Publish (Release)
 
 on:
-  workflow_run:
-    workflows:
-      - "Checks"
+  push:
     branches:
       - main
       - next
-    types:
-      - completed
 
 jobs:
   publish-release:
@@ -30,7 +26,11 @@ jobs:
       - run: npm ci
       - run: |
           git fetch --tags --quiet
+<<<<<<< Updated upstream
           npm run release
+=======
+          npm run release -- --prerelease
+>>>>>>> Stashed changes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
