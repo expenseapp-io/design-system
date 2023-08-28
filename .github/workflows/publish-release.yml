@@ -9,6 +9,7 @@ on:
 jobs:
   publish-release:
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
       - uses: actions/checkout@v3.5.2
       - name: Change Node.js Version
@@ -24,7 +25,7 @@ jobs:
             ${{ runner.os }}-npm-
       - run: npm ci
       - run: |
-          git fetch --tags --quiet
+          git fetch --unshallow --tags
           npm run release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
