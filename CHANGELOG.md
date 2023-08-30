@@ -1,3 +1,19 @@
+# 3.0.0 (Wed Aug 30 2023)
+
+#### 💥 Breaking Change
+
+- chore: next release (#34) [#35](https://github.com/expenseapp-io/design-system/pull/35) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### ⚠️ Pushed to `main`
+
+- chore: update publish-release.yml config ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 2.0.0 (Mon Aug 28 2023)
 
 #### 💥 Breaking Change
