@@ -1,9 +1,9 @@
-name: Publish (Release)
+name: Publish (Next Release)
 
 on:
   push:
     branches:
-      - main
+      - next
 
 jobs:
   publish-release:
@@ -24,7 +24,7 @@ jobs:
       - run: npm ci
       - run: |
           git fetch --tags --quiet
-          npm run release
+          npm run release:next -- -d
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
