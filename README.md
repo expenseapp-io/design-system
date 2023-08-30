@@ -10,6 +10,7 @@ Next release
 Next release
 Next release
 Next release
+Next patch release
 
 ## Features
 
