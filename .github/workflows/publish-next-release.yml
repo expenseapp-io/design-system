@@ -1,27 +1,15 @@
-name: Publish (Release)
+name: Publish (Next Release)
 
 on:
   push:
     branches:
-      - main
       - next
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
 
 jobs:
   publish-release:
-    if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3.5.2
-      - uses: 8BitJonny/gh-get-current-pr@2.2.0
-        id: PR
-        with:
-          filterOutClosed: true
-          sha: ${{ github.event.pull_request.head.sha }}
       - name: Change Node.js Version
         uses: actions/setup-node@v3.6.0
         with:
@@ -35,9 +23,8 @@ jobs:
             ${{ runner.os }}-npm-
       - run: npm ci
       - run: |
-          git fetch --unshallow --tags
-          npm run release
+          git fetch --tags --quiet
+          npm run release -- --base-branch next
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          PR: ${{ steps.PR.outputs.number }}
