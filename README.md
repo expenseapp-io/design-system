@@ -19,6 +19,7 @@ Next release
 Next release
 New minor release
 New minor release
+Fix GitHub Config
 
 ## Features
 
