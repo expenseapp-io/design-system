@@ -1,3 +1,20 @@
+# 3.2.0 (Thu Aug 31 2023)
+
+#### 🚀 Enhancement
+
+- Next [#43](https://github.com/expenseapp-io/design-system/pull/43) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### ⚠️ Pushed to `main`
+
+- chore: update git fetch ([@pavelkeyzik](https://github.com/pavelkeyzik))
+- chore: update publish-release.yml ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 3.1.0 (Wed Aug 30 2023)
 
 #### 🚀 Enhancement
