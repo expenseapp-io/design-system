@@ -1,3 +1,19 @@
+# 3.4.0 (Thu Aug 31 2023)
+
+#### 🚀 Enhancement
+
+- Next [#53](https://github.com/expenseapp-io/design-system/pull/53) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### ⚠️ Pushed to `main`
+
+- chore: remove unshallow ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 3.3.0 (Thu Aug 31 2023)
 
 #### 🚀 Enhancement
