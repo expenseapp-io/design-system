@@ -25,7 +25,7 @@ jobs:
             ${{ runner.os }}-npm-
       - run: npm ci
       - run: |
-          git fetch --quiet --tags
+          git fetch --quiet --tags --unshallow
           npm run release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
