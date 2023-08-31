@@ -20,6 +20,9 @@ Next release
 New minor release
 New minor release
 Fix GitHub Config
+Feature/A
+Feature/B
+Feature/C
 
 ## Features
 
