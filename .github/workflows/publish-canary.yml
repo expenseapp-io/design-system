@@ -31,7 +31,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: |
-          git fetch --tags --quiet
+          git fetch --quiet --tags --unshallow
           npm run release:canary -- --pr ${{ inputs.prId }} --target comment
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
