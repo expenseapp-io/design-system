@@ -17,6 +17,7 @@ Next release
 Next release
 Next release
 Next release
+New minor release
 
 ## Features
 
