@@ -21,6 +21,7 @@ New minor release
 New minor release
 Fix GitHub Config
 Feature/A
+Feature/B
 
 ## Features
 
