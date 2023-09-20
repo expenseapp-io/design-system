@@ -1,6 +1,6 @@
 # Monout Design System
 
-Design System for our Monout application.
+Design System for Monout application.
 
 ## Internal features
 
