@@ -1,30 +1,8 @@
-# ExpenseApp Design System
+# Monout Design System
 
-Design System Libary for our ExpenseApp. As it's in early development, you can use it as boilerplate if you want. Let us know if you see any issues 😂
+Design System for our Monout application.
 
-## Testing a new major release
-
-First test
-Next release
-Next release
-Next release
-Next release
-Next release
-Next patch release
-Next release
-Next release
-Next release
-Next release
-Next release
-Next release
-New minor release
-New minor release
-Fix GitHub Config
-Feature/A
-Feature/B
-Feature/C
-
-## Features
+## Internal features
 
 - [x] React
 - [x] TypeScript
