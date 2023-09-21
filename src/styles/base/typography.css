@@ -1,0 +1,40 @@
+:root {
+  --font-base-size: 1rem;
+  --font-scale: 1;
+  --line-height-scale: 1.5;
+}
+
+h1,
+h2,
+h3,
+p,
+.text-large,
+.text-small {
+  margin: 0;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
+}
+
+h1 {
+  --font-scale: 2;
+}
+
+h2 {
+  --font-scale: 1.75;
+}
+
+h3 {
+  --font-scale: 1.5;
+}
+
+p {
+  --font-scale: 1;
+}
+
+.text-large {
+  --font-scale: 1.25;
+}
+
+.text-small {
+  --font-scale: 0.75;
+}
