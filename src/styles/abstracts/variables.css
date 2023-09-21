@@ -1,4 +1,5 @@
 :root {
+  /* Primitive colors */
   --neutral-0: #E6E6E6;
   --neutral-1: #CFCFCF;
   --neutral-2: #B8B8B8;
@@ -11,4 +12,29 @@
   --neutral-9: #171717;
   --white: #FFF;
   --black: #000;
+
+  /* Spacing */
+  --space-0: 0;
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 12px;
+  --space-6: 16px;
+  --space-7: 20px;
+  --space-8: 24px;
+  --space-9: 32px;
+  --space-10: 40px;
+  --space-11: 64px;
+  --space-12: 80px;
+
+  /* Corner Radius */
+  --corner-5: 12px;
+
+  /* Semantic Colors */
+  --body-background: var(--white);
+}
+
+.dark-theme {
+  --body-background: var(--black);
 }
