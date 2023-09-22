@@ -1,3 +1,20 @@
+# 1.1.0 (Fri Sep 22 2023)
+
+#### 🚀 Enhancement
+
+- Add input and form-control components [#65](https://github.com/expenseapp-io/design-system/pull/65) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### ⚠️ Pushed to `main`
+
+- chore: update GitHub Worfklows config [ci skip] ([@pavelkeyzik](https://github.com/pavelkeyzik))
+- chore: remove publish for PRs [ci skip] ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.0.2 (Thu Sep 21 2023)
 
 #### 🐛 Bug Fix
