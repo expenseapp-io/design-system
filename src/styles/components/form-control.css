@@ -1,0 +1,19 @@
+@import '../abstracts/variables.css';
+
+:root {
+  --form-control-label: var(--neutral-6);
+}
+
+.dark-theme {
+  --form-control-label: var(--neutral-5);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-control-label {
+  color: var(--form-control-label);
+}

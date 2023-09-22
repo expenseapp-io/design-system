@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/blocks';
+import { UnstyledWithTheme } from '../components/UnstyledWithTheme';
+
+<Meta title="Component/Input" />
+
+# Input
+
+This page describes the color system we use.
+
+<UnstyledWithTheme>
+  <div style={{ display: 'grid', gap: '16px' }}>
+    <input className="input" placeholder="Enter email" />
+    <input className="input" placeholder="Enter email" defaultValue="pavel.keyzik@gmail.com" />
+    <input className="input" placeholder="Enter email" disabled />
+    <input className="input" placeholder="Enter email" defaultValue="pavel.keyzik@gmail.com" disabled />
+    <label className="form-control">
+      <span className="form-control-label">Emal address:</span>
+      <input className="input" placeholder="Enter email" />
+    </label>
+  </div>
+</UnstyledWithTheme>
+
