@@ -1,17 +1,12 @@
 name: Checks
 
 on:
-  workflow_call:
   pull_request:
     types:
       - opened
       - reopened
       - synchronize
       - unlocked
-  push:
-    branches:
-      - main
-      - next
 
 jobs:
   code-quality:
@@ -31,13 +26,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-
       - run: npm ci
-      # - name: ESLint
-      #   run: npm run lint
-      # - name: Stylelint
-      #   run: npm run lint:style
-      # - name: Tests
-      #   run: npm run test
-      # - name: Check build
-      #   run: npm run build
-      # - name: Check size-limit
-      #   run: npm run size
+      - name: ESLint
+        run: npm run lint
+      - name: Stylelint
+        run: npm run lint:style
+      - name: Tests
+        run: npm run test
+      - name: Check build
+        run: npm run build
+      - name: Check size-limit
+        run: npm run size

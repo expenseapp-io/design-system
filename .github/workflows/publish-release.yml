@@ -29,6 +29,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-npm-
       - run: npm ci
+      - name: Tests
+        run: npm run test
+      - name: Check build
+        run: npm run build
       - run: |
           git fetch --tags --unshallow
           npm run release
