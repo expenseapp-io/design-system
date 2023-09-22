@@ -1,0 +1,56 @@
+@import '../abstracts/variables.css';
+
+:root {
+  --input-background: var(--white);
+  --input-foreground: var(--neutral-9);
+  --input-placeholder: var(--neutral-6);
+  --input-background-on-disabled: var(--neutral-0);
+  --input-foreground-on-disabled: var(--neutral-6);
+  --input-border: var(--neutral-1);
+  --input-border-on-disabled: var(--neutral-1);
+}
+
+.dark-theme {
+  --input-background: var(--black);
+  --input-foreground: var(--white);
+  --input-placeholder: var(--neutral-4);
+  --input-background-on-disabled: var(--neutral-9);
+  --input-foreground-on-disabled: var(--neutral-4);
+  --input-border: var(--neutral-8);
+  --input-border-on-disabled: var(--neutral-8);
+}
+
+.input {
+  padding-block: var(--space-6);
+  padding-inline: var(--space-5);
+
+  color: var(--input-foreground);
+
+  background: var(--input-background);
+  border: 2px solid var(--input-border);
+  border-radius: var(--corner-5);
+}
+
+.input::placeholder {
+  color: var(--input-placeholder);
+}
+
+.input:focus {
+  border-color: var(--focus-ring);
+}
+
+.input[disabled] {
+  cursor: not-allowed;
+  opacity: 1;
+  background: var(--input-background-on-disabled);
+  border-color: var(--input-background-on-disabled);
+}
+
+.input[disabled]::placeholder,
+.input[disabled] {
+  overflow: visible;
+  color: var(--input-foreground-on-disabled);
+  opacity: 1;
+
+  -webkit-text-fill-color: var(--input-foreground-on-disabled);
+}

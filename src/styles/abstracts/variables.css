@@ -33,8 +33,10 @@
 
   /* Semantic Colors */
   --body-background: var(--white);
+  --focus-ring: var(--neutral-9);
 }
 
 .dark-theme {
   --body-background: var(--black);
+  --focus-ring: var(--neutral-0);
 }
