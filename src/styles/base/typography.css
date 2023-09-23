@@ -13,6 +13,7 @@ p,
   margin: 0;
   font-size: calc(var(--font-scale) * var(--font-base-size));
   line-height: var(--line-height-scale);
+  color: var(--text-primary);
 }
 
 h1 {
@@ -29,6 +30,8 @@ h3 {
 
 p {
   --font-scale: 1;
+
+  color: var(--text-secondary);
 }
 
 .text-large {
