@@ -20,7 +20,7 @@ function UnstyledWithTheme(props: Props) {
 	}
 
 	return (
-		<Unstyled>
+		<Unstyled style={{ paddingBlockEnd: 32 }}>
 			<div style={{display: "grid", gap: 16, gridTemplateColumns: "1fr 1fr"}}>
 				<div className="light-theme">
 					{renderHeader("Light Theme")}

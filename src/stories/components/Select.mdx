@@ -1,0 +1,113 @@
+import { Meta, Unstyled } from '@storybook/blocks';
+import { UnstyledWithTheme } from '../../components/UnstyledWithTheme';
+
+<Meta title="Components/Select" />
+
+# Select
+
+<UnstyledWithTheme>
+  <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+    <div className="form-control">
+      <span className="form-control-label">Label</span>
+      <div className="select-container">
+        <select className="select">
+          <option value="no-icon">Select without arrows</option>
+          <option value="today">Today</option>
+          <option value="yesteday">Yesterday</option>
+          <option value="thursday">Thursday</option>
+        </select>
+        <div className="select-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 15L12 19L16 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M16 9L12 5L8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <select className="select">
+      <option value="no-icon">Select without arrows</option>
+      <option value="today">Today</option>
+      <option value="yesteday">Yesterday</option>
+      <option value="thursday">Thursday</option>
+    </select>
+    <div className="select-container">
+      <select className="select" disabled>
+        <option value="no-icon">Select without arrows</option>
+        <option value="today">Today</option>
+        <option value="yesteday">Yesterday</option>
+        <option value="thursday">Thursday</option>
+      </select>
+      <div className="select-icon">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 15L12 19L16 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16 9L12 5L8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+## Default select
+
+Default styles of our select don't have any icon:
+
+<Unstyled>
+  <select className="select" style={{ width: 300 }}>
+    <option value="no-icon">Select without arrows</option>
+    <option value="today">Today</option>
+    <option value="yesteday">Yesterday</option>
+    <option value="thursday">Thursday</option>
+  </select>
+</Unstyled>
+
+```html
+<select className="select">
+  <option value="no-icon">Select without arrows</option>
+  <option value="today">Today</option>
+  <option value="yesteday">Yesterday</option>
+  <option value="thursday">Thursday</option>
+</select>
+```
+
+## Select With Arrows
+
+In case you want to add an icon, you'll need to wrap the select component with `.select-container` class and after select, add `.select-icon` element with `<svg>` inside.
+
+> Note:
+> The SVG icon have a few requirenments:
+> 1. The color of visible elements should be `currentColor`
+> 2. The size of the icons should be `24px`. If the size is not equal to `24px` you might need to update paddings for `.select` to prevent showing icon on top of the selected text.
+
+<Unstyled>
+  <div className="select-container" style={{ width: 300 }}>
+    <select className="select">
+      <option value="no-icon">Select without arrows</option>
+      <option value="today">Today</option>
+      <option value="yesteday">Yesterday</option>
+      <option value="thursday">Thursday</option>
+    </select>
+    <div className="select-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 15L12 19L16 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M16 9L12 5L8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+  </div>
+</Unstyled>
+
+```html
+<div className="select-container">
+  <select className="select">
+    <option value="no-icon">Select without arrows</option>
+    <option value="today">Today</option>
+    <option value="yesteday">Yesterday</option>
+    <option value="thursday">Thursday</option>
+  </select>
+  <div className="select-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 15L12 19L16 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M16 9L12 5L8 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+</div>
+```

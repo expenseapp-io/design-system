@@ -9,5 +9,6 @@
   "stylelint.validate": [
     "css",
     "scss"
-  ]
+  ],
+  "editor.wordWrap": "on"
 }
