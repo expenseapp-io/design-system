@@ -1,3 +1,15 @@
+# 1.2.0 (Sun Sep 24 2023)
+
+#### 🚀 Enhancement
+
+- Add icons [#69](https://github.com/expenseapp-io/design-system/pull/69) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.1.1 (Sat Sep 23 2023)
 
 #### 🐛 Bug Fix
