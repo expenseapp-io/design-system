@@ -1,0 +1,23 @@
+import { Meta } from '@storybook/blocks';
+import { UnstyledWithTheme } from '../../components/UnstyledWithTheme';
+import CalendarIcon from '../../icons/CalendarIcon.svg?react';
+import XIcon from '../../icons/XIcon.svg?react';
+
+<Meta title="Components/IconButton" />
+
+# IconButton
+
+<UnstyledWithTheme>
+  <div style={{ display: 'flex', gap: '16px' }}>
+    <button className="icon-button">
+      <CalendarIcon />
+    </button>
+    <button className="icon-button">
+      <XIcon />
+    </button>
+    <button className="icon-button" disabled>
+      <XIcon />
+    </button>
+  </div>
+</UnstyledWithTheme>
+

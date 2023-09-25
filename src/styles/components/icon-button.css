@@ -1,0 +1,40 @@
+@import '../abstracts/variables.css';
+
+:root {
+  --icon-button-foreground: var(--neutral-6);
+  --icon-button-background-on-hover: var(--neutral-0);
+  --icon-button-foreground-on-hover: var(--neutral-9);
+  --icon-button-background-on-disabled: var(--neutral-3);
+}
+
+.dark-theme {
+  --icon-button-foreground: var(--neutral-3);
+  --icon-button-background-on-hover: var(--neutral-8);
+  --icon-button-foreground-on-hover: var(--white);
+  --icon-button-background-on-disabled: var(--neutral-6);
+}
+
+.icon-button {
+  display: inline-flex;
+
+  padding: var(--space-5);
+
+  color: var(--icon-button-foreground);
+
+  background: none;
+  border: none;
+  border-radius: var(--corner-5);
+}
+
+.icon-button:hover,
+.icon-button:active,
+.icon-button:focus {
+  color: var(--icon-button-foreground-on-hover);
+  background: var(--icon-button-background-on-hover);
+}
+
+.icon-button[disabled] {
+  cursor: not-allowed;
+  color: var(--icon-button-background-on-disabled);
+  background: none;
+}

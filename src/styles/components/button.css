@@ -30,7 +30,8 @@
 }
 
 .button:hover,
-.button:active {
+.button:active,
+.button:focus {
   background: var(--button-primary-background-on-hover);
 }
 
