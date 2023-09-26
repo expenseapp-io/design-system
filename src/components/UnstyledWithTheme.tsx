@@ -2,12 +2,23 @@ import React from "react";
 import { Unstyled } from "@storybook/blocks";
 import { PropsWithChildren } from "react";
 
-type Props = PropsWithChildren
+interface Props extends PropsWithChildren {
+  height?: number,
+  vertical?: boolean,
+  padding?: number
+}
 
 function UnstyledWithTheme(props: Props) {
 	function renderChild() {
 		return (
-			<div style={{ padding: 24, border: "2px solid #eee", background: "var(--body-background)" }}>
+			<div style={{
+				position: "relative",
+				boxSizing: "border-box",
+				padding: props.padding !== undefined ? props.padding : 24,
+				border: "2px solid #eee",
+				background: "var(--body-background)",
+				height: props.height
+			}}>
 				{props.children}
 			</div>
 		);
@@ -21,7 +32,7 @@ function UnstyledWithTheme(props: Props) {
 
 	return (
 		<Unstyled style={{ paddingBlockEnd: 32 }}>
-			<div style={{display: "grid", gap: 16, gridTemplateColumns: "1fr 1fr"}}>
+			<div style={{display: "grid", gap: 16, gridTemplateColumns: props.vertical ? "1fr" : "1fr 1fr"}}>
 				<div className="light-theme">
 					{renderHeader("Light Theme")}
 					{renderChild()}
