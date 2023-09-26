@@ -1,3 +1,15 @@
+# 1.4.0 (Tue Sep 26 2023)
+
+#### 🚀 Enhancement
+
+- Add dialog component [#71](https://github.com/expenseapp-io/design-system/pull/71) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.3.0 (Mon Sep 25 2023)
 
 #### 🚀 Enhancement
