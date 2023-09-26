@@ -19,6 +19,7 @@
 /* Base button will always be a primary one */
 .button {
   display: inline-flex;
+  justify-content: center;
 
   padding: var(--space-5);
 
