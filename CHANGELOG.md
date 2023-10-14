@@ -1,3 +1,15 @@
+# 1.5.0 (Sat Oct 14 2023)
+
+#### 🚀 Enhancement
+
+- feat: export icons and styles [#72](https://github.com/expenseapp-io/design-system/pull/72) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.4.0 (Tue Sep 26 2023)
 
 #### 🚀 Enhancement
