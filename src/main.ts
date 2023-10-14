@@ -1,1 +1,3 @@
-// nothing for now
+import "./styles/main.css";
+
+export * from "./icons";
