@@ -21,6 +21,7 @@
   cursor: pointer;
 
   display: inline-flex;
+  gap: var(--space-4);
   justify-content: center;
 
   margin: 0;
