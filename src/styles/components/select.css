@@ -21,16 +21,21 @@
 }
 
 .select {
+  cursor: pointer;
+
   position: relative;
 
   width: 100%;
+  margin: 0;
   padding: var(--space-6) calc(var(--space-5) * 2 + 24px) var(--space-6) var(--space-5);
 
+  font: inherit;
   color: var(--select-foreground);
 
   appearance: none;
   background: none;
   background-color: var(--select-background);
+  border: none;
   border: 2px solid var(--select-border);
   border-radius: var(--corner-5);
 }

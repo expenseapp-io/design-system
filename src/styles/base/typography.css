@@ -4,10 +4,10 @@
   --line-height-scale: 1.5;
 }
 
-h1,
-h2,
-h3,
-p,
+.title-1,
+.title-2,
+.title-3,
+.text,
 .text-large,
 .text-small {
   margin: 0;
@@ -16,26 +16,28 @@ p,
   color: var(--text-primary);
 }
 
-h1 {
+.title-1 {
   --font-scale: 2;
 }
 
-h2 {
+.title-2 {
   --font-scale: 1.75;
 }
 
-h3 {
+.title-3 {
   --font-scale: 1.5;
-}
-
-p {
-  --font-scale: 1;
-
-  color: var(--text-secondary);
 }
 
 .text-large {
   --font-scale: 1.25;
+}
+
+.text {
+  --font-scale: 1;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
 }
 
 .text-small {
