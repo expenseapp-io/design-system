@@ -1,3 +1,15 @@
+# 1.5.1 (Sun Oct 15 2023)
+
+#### 🐛 Bug Fix
+
+- fix: update reset.css to not containg global things [#73](https://github.com/expenseapp-io/design-system/pull/73) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.5.0 (Sat Oct 14 2023)
 
 #### 🚀 Enhancement
