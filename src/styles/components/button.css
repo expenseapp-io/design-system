@@ -18,11 +18,15 @@
 
 /* Base button will always be a primary one */
 .button {
+  cursor: pointer;
+
   display: inline-flex;
   justify-content: center;
 
+  margin: 0;
   padding: var(--space-5);
 
+  font: inherit;
   color: var(--button-primary-foreground);
 
   background: var(--button-primary-background);
