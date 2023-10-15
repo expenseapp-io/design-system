@@ -1,3 +1,15 @@
+# 1.5.2 (Sun Oct 15 2023)
+
+#### 🐛 Bug Fix
+
+- fix: add gap for buttons [#74](https://github.com/expenseapp-io/design-system/pull/74) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.5.1 (Sun Oct 15 2023)
 
 #### 🐛 Bug Fix
