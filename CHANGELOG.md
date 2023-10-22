@@ -1,3 +1,15 @@
+# 1.5.3 (Sun Oct 22 2023)
+
+#### 🐛 Bug Fix
+
+- fix: input border colors [#75](https://github.com/expenseapp-io/design-system/pull/75) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.5.2 (Sun Oct 15 2023)
 
 #### 🐛 Bug Fix
