@@ -6,8 +6,8 @@
   --input-placeholder: var(--neutral-6);
   --input-background-on-disabled: var(--neutral-0);
   --input-foreground-on-disabled: var(--neutral-6);
-  --input-border: var(--neutral-1);
-  --input-border-on-disabled: var(--neutral-1);
+  --input-border: var(--neutral-0);
+  --input-border-on-disabled: var(--neutral-0);
 }
 
 .dark-theme {
@@ -16,8 +16,8 @@
   --input-placeholder: var(--neutral-4);
   --input-background-on-disabled: var(--neutral-9);
   --input-foreground-on-disabled: var(--neutral-4);
-  --input-border: var(--neutral-8);
-  --input-border-on-disabled: var(--neutral-8);
+  --input-border: var(--neutral-7);
+  --input-border-on-disabled: var(--neutral-7);
 }
 
 .input {
