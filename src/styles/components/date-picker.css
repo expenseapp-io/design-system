@@ -1,0 +1,161 @@
+@import '../abstracts/variables.css';
+
+:root {
+  --page-background: white;
+}
+
+.date-picker-select {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.date-picker-container {
+  display: flex;
+}
+
+.date-picker-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 54px;
+
+  color: var(--select-arrows);
+
+  background: none;
+  border: 2px solid var(--select-border);
+  border-top-right-radius: var(--corner-5);
+  border-bottom-right-radius: var(--corner-5);
+}
+
+.date-picker-button:focus {
+  border-color: var(--focus-ring);
+}
+
+.date-picker-button-container {
+  position: relative;
+  display: flex;
+  width: 54px;
+  height: 54px;
+}
+
+.date-picker-calendar {
+  position: absolute;
+  top: calc(54px + var(--space-3));
+  right: 0;
+
+  padding: var(--space-5);
+
+  background: var(--white);
+  border-radius: var(--corner-5);
+}
+
+
+.date-picker-popover {
+  background: red;
+}
+
+
+/*  React Date Picker  */
+
+/* .react-aria-DatePicker .react-aria-Group {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.react-aria-Calendar {
+  --highlight-background: black;
+  --highlight-foreground: white;
+  --button-background: var(--spectrum-global-color-gray-50);
+  --button-background-pressed: var(--spectrum-global-color-gray-100);
+  --button-border: var(--spectrum-global-color-gray-400);
+  --text-color: var(--spectrum-alias-text-color);
+  --text-color-disabled: var(--spectrum-alias-text-color-disabled);
+  --text-color-invalid: var(--spectrum-global-color-red-600);
+  --pressed-color: var(--spectrum-global-color-gray-200);
+  --unavailable-color: var(--spectrum-global-color-red-600);
+  --invalid-color: var(--spectrum-global-color-static-red-600);
+
+  width: fit-content;
+  color: var(--text-color);
+}
+
+.react-aria-Calendar header {
+  display: flex;
+  align-items: center;
+}
+
+.react-aria-Heading {
+  flex: 1;
+  text-align: center;
+}
+
+.react-aria-CalendarCell {
+  cursor: default;
+
+  width: 2rem;
+  margin: -1px;
+
+  line-height: 2rem;
+  text-align: center;
+
+  border: 2px solid var(--page-background);
+  border-radius: 6px;
+  outline: none;
+}
+
+.react-aria-CalendarCell[data-outside-month] {
+  display: none;
+}
+
+.react-aria-CalendarCell[data-pressed] {
+  background: var(--pressed-color);
+}
+
+.react-aria-CalendarCell[data-focus-visible] {
+  box-shadow: 0 0 0 2px var(--highlight-background);
+}
+
+.react-aria-CalendarCell[data-selected] {
+  color: var(--highlight-foreground);
+  background: var(--highlight-background);
+}
+
+.react-aria-CalendarCell[data-disabled] {
+  color: var(--text-color-disabled);
+}
+
+.react-aria-CalendarCell[data-unavailable] {
+  color: var(--unavailable-color);
+  text-decoration: line-through;
+}
+
+.react-aria-CalendarCell[data-invalid] {
+  color: var(--highlight-foreground);
+  background: var(--invalid-color);
+}
+
+.react-aria-Calendar[slot="errorMessage"] {
+  font-size: 12px;
+  color: var(--text-color-invalid);
+}
+
+.react-aria-Popover {
+  overflow: auto;
+
+  background: var(--page-background);
+  border: 1px solid var(--spectrum-global-color-gray-400);
+  border-radius: 6px;
+  box-shadow: 0 8px 20px rgba(0 0 0 / 10%);
+}
+
+.react-aria-Popover[data-placement="top"] {
+  --origin: translateY(8px);
+}
+
+.react-aria-Popover[data-placement="bottom"] {
+  --origin: translateY(-8px);
+}
+
+ */

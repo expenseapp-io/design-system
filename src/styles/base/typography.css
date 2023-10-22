@@ -9,7 +9,8 @@
 .title-3,
 .text,
 .text-large,
-.text-small {
+.text-small,
+b {
   margin: 0;
   font-size: calc(var(--font-scale) * var(--font-base-size));
   line-height: var(--line-height-scale);

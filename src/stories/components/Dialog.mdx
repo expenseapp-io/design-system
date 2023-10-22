@@ -1,5 +1,6 @@
 import { Meta } from '@storybook/blocks';
-import { UnstyledWithTheme } from '../../components/UnstyledWithTheme'
+import { UnstyledWithTheme } from '../../components/UnstyledWithTheme';
+import { DatePicker } from '../../components/DatePicker';
 import XIcon from '../../icons/XIcon.svg?react';
 import CaretUpDownIcon from '../../icons/CaretUpDownIcon.svg?react';
 
@@ -34,6 +35,10 @@ import CaretUpDownIcon from '../../icons/CaretUpDownIcon.svg?react';
           <label className="form-control">
             <span className="form-control-label">Description</span>
             <input className="input" placeholder="Description" />
+          </label>
+          <label className="form-control">
+            <span className="form-control-label">Date</span>
+            <DatePicker />
           </label>
           <label className="form-control">
             <span className="form-control-label">Category</span>
