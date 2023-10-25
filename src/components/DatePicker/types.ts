@@ -1,13 +1,12 @@
-
 export interface DatePickerState {
-  isOpen: boolean
+  isOpen: boolean;
 }
 
 export enum DatePickerActionType {
   Open = "Open",
-  Close = "Close"
+  Close = "Close",
 }
 
 export type DatePickerAction = {
-  type: DatePickerActionType
+  type: DatePickerActionType;
 };

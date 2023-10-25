@@ -1,95 +1,74 @@
-import React/*, { useReducer }*/ from "react";
+import React from "react";
+import { CalendarDate, parseDate } from "@internationalized/date";
 import CalendarIcon from "../../icons/CalendarIcon.svg?react";
-// import { initialState, reducer } from "./reducer";
-// import { DatePickerActionType } from "./types";
 import {
-	Button,
-	Calendar,
-	CalendarCell,
-	CalendarGrid,
-	// DateInput,
-	DatePicker as DatePickerAria,
-	// DateSegment,
-	Dialog,
-	Group,
-	Heading,
-	// Label,
-	Popover} from "react-aria-components";
+  Button,
+  Calendar,
+  CalendarCell,
+  CalendarGrid,
+  DatePicker as DatePickerAria,
+  Dialog,
+  Group,
+  Heading,
+  Popover,
+} from "react-aria-components";
 import CaretLeftIcon from "../../icons/CaretLeftIcon.svg?react";
 import CaretRightIcon from "../../icons/CaretRightIcon.svg?react";
 
-function DatePicker() {
-	// const [state, dispatch] = useReducer(reducer, initialState);
+interface DatePickerProps {
+  value: CalendarDate;
+  selectList: { value: string; label: string }[];
+  onChange: (value: CalendarDate) => void;
+}
 
-	// function openDatePicker() {
-	// 	dispatch({ type: DatePickerActionType.Open });
-	// }
+function DatePicker(props: DatePickerProps) {
+  const { value, onChange, selectList } = props;
 
-	// function closeDatePicker() {
-	// 	dispatch({ type: DatePickerActionType.Close });
-	// }
-
-	// function onCalendarButtonClick() {
-	// 	if (state.isOpen) {
-	// 		closeDatePicker();
-	// 	} else {
-	// 		openDatePicker();
-	// 	}
-	// }
-
-	return (
-		<div className="date-picker-container">
-			<select className="select date-picker-select">
-				<option value="today">Today</option>
-				<option value="yesterday">Yesterday</option>
-				<option value="monday">Monday (Sep 25)</option>
-				<option value="sunday">Sunday (Sep 24)</option>
-				<option value="saturday">Saturday (Sep 23)</option>
-				<option value="friday">Friday (Sep 22)</option>
-				<option value="thursday">Thursday (Sep 21)</option>
-			</select>
-			<div className="date-picker-button-container">
-				<DatePickerAria>
-					<Group style={{ height: "100%", alignItems: "unset" }}>
-						<Button className="date-picker-button">
-							<CalendarIcon />
-						</Button>
-					</Group>
-					<Popover>
-						<Dialog>
-							<Calendar>
-								<header>
-									<Button className="button" slot="previous">
-										<CaretLeftIcon />
-									</Button>
-									<Heading />
-									<Button className="button" slot="next">
-										<CaretRightIcon />
-									</Button>
-								</header>
-								<CalendarGrid>
-									{(date) => <CalendarCell date={date} />}
-								</CalendarGrid>
-							</Calendar>
-						</Dialog>
-					</Popover>
-				</DatePickerAria>
-			</div>
-			{/* <button
-				className="date-picker-button"
-				// onClick={onCalendarButtonClick}
-				popovertarget="mypopover"
-				popovertargetaction="show"
-			>
-				<CalendarIcon />
-			</button>
-			<dialog id="mypopover" popover="" className="date-picker-popover">
-        Hello
-				<input />
-				<button>Cancel</button>
-			</dialog> */}
-		</div>
-	);
+  return (
+    <div className="date-picker-container">
+      <select
+        className="select date-picker-select"
+        value={value.toString()}
+        onChange={(event) => {
+          const parsedDate = parseDate(event.currentTarget.value);
+          onChange(parsedDate);
+        }}
+      >
+        {selectList.map((dayOption) => (
+          <option key={dayOption.value} value={dayOption.value}>
+            {dayOption.label}
+          </option>
+        ))}
+      </select>
+      <div className="date-picker-button-container">
+        <DatePickerAria value={value} onChange={onChange}>
+          <Group style={{ height: "100%", alignItems: "unset" }}>
+            <Button className="date-picker-button">
+              <CalendarIcon />
+            </Button>
+          </Group>
+          <Popover>
+            <Dialog>
+              <Calendar>
+                <header>
+                  <Button className="icon-button" slot="previous">
+                    <CaretLeftIcon />
+                  </Button>
+                  <Heading className="text" />
+                  <Button className="icon-button" slot="next">
+                    <CaretRightIcon />
+                  </Button>
+                </header>
+                <CalendarGrid weekdayStyle="short">
+                  {(date) => <CalendarCell date={date} />}
+                </CalendarGrid>
+              </Calendar>
+            </Dialog>
+          </Popover>
+        </DatePickerAria>
+      </div>
+    </div>
+  );
 }
 
 export { DatePicker };

@@ -28,7 +28,8 @@
 
 .icon-button:hover,
 .icon-button:active,
-.icon-button:focus {
+.icon-button:focus,
+.icon-button:focus-within {
   color: var(--icon-button-foreground-on-hover);
   background: var(--icon-button-background-on-hover);
 }

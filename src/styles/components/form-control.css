@@ -1,4 +1,4 @@
-@import '../abstracts/variables.css';
+@import "../abstracts/variables.css";
 
 :root {
   --form-control-label: var(--neutral-6);

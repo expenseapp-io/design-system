@@ -1,16 +1,16 @@
 :root {
   /* Primitive colors */
-  --neutral-0: #E6E6E6;
-  --neutral-1: #CFCFCF;
-  --neutral-2: #B8B8B8;
-  --neutral-3: #A1A1A1;
-  --neutral-4: #8A8A8A;
+  --neutral-0: #e6e6e6;
+  --neutral-1: #cfcfcf;
+  --neutral-2: #b8b8b8;
+  --neutral-3: #a1a1a1;
+  --neutral-4: #8a8a8a;
   --neutral-5: #737373;
-  --neutral-6: #5C5C5C;
+  --neutral-6: #5c5c5c;
   --neutral-7: #454545;
-  --neutral-8: #2E2E2E;
+  --neutral-8: #2e2e2e;
   --neutral-9: #171717;
-  --white: #FFF;
+  --white: #fff;
   --black: #000;
 
   /* Spacing */
@@ -35,6 +35,7 @@
   --body-background: var(--white);
   --text-primary: var(--neutal-9);
   --text-secondary: var(--neutral-6);
+  --text-disabled: var(--neutral-3);
   --focus-ring: var(--neutral-9);
 }
 
@@ -42,5 +43,6 @@
   --body-background: var(--black);
   --text-primary: var(--white);
   --text-secondary: var(--neutral-3);
-  --focus-ring: var(--neutral-0);
+  --text-disabled: var(--neutral-3);
+  --focus-ring: var(--neutral-6);
 }
