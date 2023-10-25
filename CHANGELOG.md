@@ -1,3 +1,15 @@
+# 1.6.0 (Wed Oct 25 2023)
+
+#### 🚀 Enhancement
+
+- Feature/date picker [#76](https://github.com/expenseapp-io/design-system/pull/76) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.5.3 (Sun Oct 22 2023)
 
 #### 🐛 Bug Fix
