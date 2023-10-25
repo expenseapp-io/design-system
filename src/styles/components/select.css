@@ -1,4 +1,4 @@
-@import '../abstracts/variables.css';
+@import "../abstracts/variables.css";
 
 :root {
   --select-background: var(--white);
@@ -27,7 +27,8 @@
 
   width: 100%;
   margin: 0;
-  padding: var(--space-6) calc(var(--space-5) * 2 + 24px) var(--space-6) var(--space-5);
+  padding: var(--space-6) calc(var(--space-5) * 2 + 24px) var(--space-6)
+    var(--space-5);
 
   font: inherit;
   color: var(--select-foreground);
@@ -72,5 +73,3 @@
 .select-container:has(.select[disabled]) .select-icon {
   color: var(--select-arrows-on-disabled);
 }
-
-

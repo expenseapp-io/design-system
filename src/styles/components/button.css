@@ -1,4 +1,4 @@
-@import '../abstracts/variables.css';
+@import "../abstracts/variables.css";
 
 :root {
   --button-primary-background: var(--neutral-9);
@@ -44,5 +44,5 @@
 .button[disabled] {
   cursor: not-allowed;
   color: var(--button-primary-foreground-on-disabled);
-  background: var(--button-primary-background-on-disabled)
+  background: var(--button-primary-background-on-disabled);
 }

@@ -1,13 +1,13 @@
-import { Meta, Unstyled } from '@storybook/blocks';
-import { UnstyledWithTheme } from '../../components/UnstyledWithTheme';
-import CaretUpDownIcon from '../../icons/CaretUpDownIcon.svg?react';
+import { Meta, Unstyled } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import CaretUpDownIcon from "../../icons/CaretUpDownIcon.svg?react";
 
 <Meta title="Components/Select" />
 
 # Select
 
 <UnstyledWithTheme>
-  <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+  <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
     <div className="form-control">
       <span className="form-control-label">Label</span>
       <div className="select-container">
@@ -70,6 +70,7 @@ In case you want to add an icon, you'll need to wrap the select component with `
 
 > Note:
 > The SVG icon have a few requirenments:
+>
 > 1. The color of visible elements should be `currentColor`
 > 2. The size of the icons should be `24px`. If the size is not equal to `24px` you might need to update paddings for `.select` to prevent showing icon on top of the selected text.
 
