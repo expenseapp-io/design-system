@@ -8,7 +8,25 @@
     "source.fixAll.stylelint": true,
     "source.fixAll": true
   },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[mdx]": {
+    "editor.defaultFormatter": "vscode.markdown-language-features"
+  },
   "eslint.format.enable": true,
   "stylelint.validate": ["css", "scss"],
-  "editor.wordWrap": "on"
+  "editor.wordWrap": "on",
+  "[markdown]": {
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "strings": "off",
+      "other": "off"
+    },
+    "editor.formatOnSave": false
+  }
 }

@@ -1,65 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 import { Meta } from "@storybook/react";
 import { DatePicker } from "../../components/DatePicker";
-import XIcon from "../../icons/XIcon.svg?react";
-import CaretUpDownIcon from "../../icons/CaretUpDownIcon.svg?react";
-import {
-  CalendarDate,
-  DateFormatter,
-  getLocalTimeZone,
-  today,
-} from "@internationalized/date";
+import XIcon from "../../icons/XIcon.svg";
+import CaretUpDownIcon from "../../icons/CaretUpDownIcon.svg";
+import { useDatePicker } from "../../utils/useDatePicker";
 
 export default {
   title: "Components/Dialog",
   component: DatePicker,
 } as Meta;
 
-function generateLastWeekDates(
-  startFrom: CalendarDate,
-  selectedDate: CalendarDate
-) {
-  const days = [];
-  let currentDate = startFrom;
-  const formatter = new DateFormatter("en-US", {
-    day: "2-digit",
-    month: "short",
-    weekday: "long",
-  });
-
-  for (let i = 0; i < 7; i++) {
-    const formattedDate = formatter.format(
-      currentDate.toDate(getLocalTimeZone())
-    );
-    const customLabels = ["Today", "Yesterday"];
-
-    days.push({
-      value: currentDate.toString(),
-      label: customLabels[i] ? `${customLabels[i]}` : formattedDate,
-    });
-
-    currentDate = currentDate.subtract({ days: 1 });
-  }
-
-  const doesSelectedDateExists = days.find(
-    (day) => day.value === selectedDate.toString()
-  );
-
-  if (!doesSelectedDateExists) {
-    days.unshift({
-      value: selectedDate.toString(),
-      label: formatter.format(selectedDate.toDate(getLocalTimeZone())),
-    });
-  }
-
-  return days;
-}
-
 export const Default = () => {
-  const todayDate = today(getLocalTimeZone());
-  const [selectedDate, setSelectedDate] = useState<CalendarDate>(todayDate);
-  const daysToSelect = generateLastWeekDates(todayDate, selectedDate);
+  const datePickerProps = useDatePicker();
 
   return (
     <div style={{ minHeight: 600 }}>
@@ -93,9 +46,9 @@ export const Default = () => {
               <label className="form-control">
                 <span className="form-control-label">Date</span>
                 <DatePicker
-                  value={selectedDate}
-                  onChange={setSelectedDate}
-                  selectList={daysToSelect}
+                  value={datePickerProps.selectedDate}
+                  onChange={datePickerProps.setSelectedDate}
+                  selectList={datePickerProps.daysToSelect}
                 />
               </label>
               <label className="form-control">
