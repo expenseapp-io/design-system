@@ -1,3 +1,15 @@
+# 1.6.1 (Thu Oct 26 2023)
+
+#### 🐛 Bug Fix
+
+- fix: add DatePicker export [#77](https://github.com/expenseapp-io/design-system/pull/77) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.6.0 (Wed Oct 25 2023)
 
 #### 🚀 Enhancement
