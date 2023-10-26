@@ -1,6 +1,6 @@
 import React from "react";
 import { CalendarDate, parseDate } from "@internationalized/date";
-import CalendarIcon from "../../icons/CalendarIcon.svg?react";
+import CalendarIcon from "../../icons/CalendarIcon.svg";
 import {
   Button,
   Calendar,
@@ -12,8 +12,8 @@ import {
   Heading,
   Popover,
 } from "react-aria-components";
-import CaretLeftIcon from "../../icons/CaretLeftIcon.svg?react";
-import CaretRightIcon from "../../icons/CaretRightIcon.svg?react";
+import CaretLeftIcon from "../../icons/CaretLeftIcon.svg";
+import CaretRightIcon from "../../icons/CaretRightIcon.svg";
 
 interface DatePickerProps {
   value: CalendarDate;

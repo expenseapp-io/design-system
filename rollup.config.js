@@ -6,21 +6,19 @@ import postcssImport from "postcss-import";
 import svgr from "@svgr/rollup";
 
 export default {
-	input: "src/main.ts",
-	output: {
-		dir: "dist",
-		format: "es"
-	},
-	plugins: [
-		commonjs(),
-		resolve(),
-		typescript(),
-		svgr(),
-		postcss({
-			extract: true,
-			plugins: [
-				postcssImport()
-			],
-		}),
-	]
+  input: "src/main.ts",
+  output: {
+    dir: "dist",
+    format: "es",
+  },
+  plugins: [
+    commonjs(),
+    resolve(),
+    typescript(),
+    svgr(),
+    postcss({
+      extract: true,
+      plugins: [postcssImport()],
+    }),
+  ],
 };
