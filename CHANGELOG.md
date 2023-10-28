@@ -1,3 +1,15 @@
+# 1.6.2 (Sat Oct 28 2023)
+
+#### 🐛 Bug Fix
+
+- fix: focus ring color for dark mode [#78](https://github.com/expenseapp-io/design-system/pull/78) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.6.1 (Thu Oct 26 2023)
 
 #### 🐛 Bug Fix
