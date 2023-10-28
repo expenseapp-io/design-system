@@ -44,5 +44,5 @@
   --text-primary: var(--white);
   --text-secondary: var(--neutral-3);
   --text-disabled: var(--neutral-3);
-  --focus-ring: var(--neutral-6);
+  --focus-ring: var(--white);
 }
