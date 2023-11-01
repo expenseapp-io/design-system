@@ -38,10 +38,7 @@
   },
   "homepage": "https://github.com/expenseapp-io/design-system#readme",
   "dependencies": {
-    "@internationalized/date": "3.5.0",
-    "classnames": "2.3.2",
     "react": "18.2.0",
-    "react-aria-components": "1.0.0-beta.1",
     "react-dom": "18.2.0"
   },
   "devDependencies": {

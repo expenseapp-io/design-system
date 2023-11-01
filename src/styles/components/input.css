@@ -21,11 +21,15 @@
 }
 
 .input {
+  --font-scale: 1;
+
   margin: 0;
   padding-block: var(--space-6);
   padding-inline: var(--space-5);
 
   font: inherit;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
   color: var(--input-foreground);
 
   background: var(--input-background);

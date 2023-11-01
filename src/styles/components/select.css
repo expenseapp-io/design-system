@@ -21,6 +21,8 @@
 }
 
 .select {
+  --font-scale: 1;
+
   cursor: pointer;
 
   position: relative;
@@ -31,6 +33,8 @@
     var(--space-5);
 
   font: inherit;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
   color: var(--select-foreground);
 
   appearance: none;
