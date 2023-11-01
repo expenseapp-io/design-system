@@ -18,6 +18,8 @@
 
 /* Base button will always be a primary one */
 .button {
+  --font-scale: 1;
+
   cursor: pointer;
 
   display: inline-flex;
@@ -28,7 +30,10 @@
   padding: var(--space-5);
 
   font: inherit;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
   color: var(--button-primary-foreground);
+  text-decoration: none;
 
   background: var(--button-primary-background);
   border: none;
