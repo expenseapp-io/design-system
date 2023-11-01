@@ -1,0 +1,166 @@
+@import "../abstracts/variables.css";
+
+:root {
+  --calendar-backgorund: var(--white);
+  --calendar-border: var(--neutral-0);
+  --calendar-day-background-on-hover: var(--neutral-0);
+  --calendar-selected-day-background: var(--neutral-9);
+  --calendar-selected-day-foreground: var(--white);
+}
+
+.dark-theme {
+  --calendar-backgorund: var(--neutral-8);
+  --calendar-border: var(--neutral-7);
+  --calendar-day-background-on-hover: var(--neutral-6);
+  --calendar-selected-day-background: var(--white);
+  --calendar-selected-day-foreground: var(--neutral-9);
+}
+
+.date-picker {
+  padding: var(--space-7);
+
+  background: var(--calendar-backgorund);
+  border: 1px solid var(--calendar-border);
+  border-radius: var(--space-5);
+  box-shadow: 0 10px 16px rgba(0 0 0 / 10%);
+}
+
+.date-picker::backdrop {
+  background: rgb(191 191 191 / 60%);
+}
+
+.dark-theme .date-picker::backdrop {
+  background: rgb(64 64 64 / 60%);
+}
+
+.date-picker-select {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.date-picker-select:focus-within {
+  border-right: 2px solid var(--focus-ring);
+}
+
+.date-picker-container {
+  display: flex;
+}
+
+.date-picker-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 54px;
+  height: 100%;
+
+  color: var(--select-arrows);
+
+  background: none;
+  border: 2px solid var(--select-border);
+  border-top-right-radius: var(--corner-5);
+  border-bottom-right-radius: var(--corner-5);
+}
+
+.date-picker-button:focus {
+  border-color: var(--focus-ring);
+}
+
+.date-picker-button-container {
+  position: relative;
+  display: flex;
+}
+
+.date-picker-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+}
+
+.date-picker-caption-month {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.date-picker-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: var(--space-4);
+}
+
+/* stylelint-disable selector-class-pattern */
+
+.rdp table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.rdp-cell {
+  padding: 0;
+}
+
+.rdp-day {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  font: inherit;
+  color: var(--text-primary);
+
+  background: none;
+  border: none;
+  border-radius: var(--space-5);
+}
+
+.rdp-head_cell {
+  width: 40px;
+  height: 40px;
+
+  font-weight: bold;
+  color: var(--text-primary);
+  vertical-align: middle;
+}
+
+.rdp-day_outside {
+  color: var(--text-disabled);
+}
+
+.rdp-day:not(.rdp-day_selected):hover,
+.rdp-day:not(.rdp-day_selected):focus {
+  background: var(--calendar-day-background-on-hover);
+}
+
+.rdp-day_selected {
+  color: var(--calendar-selected-day-foreground);
+  background: var(--calendar-selected-day-background);
+}
+
+/* stylelint-enable selector-class-pattern */
+
+/* Mobile specific */
+
+.date-picker-mobile-button-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.date-picker-mobile-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+}
+
+.date-picker-mobile-input::-webkit-calendar-picker-indicator {
+  width: 100%;
+  height: 100%;
+}

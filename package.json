@@ -39,6 +39,7 @@
   "homepage": "https://github.com/expenseapp-io/design-system#readme",
   "dependencies": {
     "react": "18.2.0",
+    "react-day-picker": "8.9.1",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
@@ -67,6 +68,7 @@
     "@typescript-eslint/parser": "5.59.6",
     "@vitest/coverage-c8": "0.31.0",
     "auto": "10.46.0",
+    "date-fns": "2.30.0",
     "eslint": "8.40.0",
     "eslint-plugin-react": "7.32.2",
     "eslint-plugin-storybook": "0.6.15",
