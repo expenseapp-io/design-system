@@ -1,3 +1,15 @@
+# 1.8.0 (Wed Nov 01 2023)
+
+#### 🚀 Enhancement
+
+- feat: add new date picker [#80](https://github.com/expenseapp-io/design-system/pull/80) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.7.0 (Wed Nov 01 2023)
 
 #### 🚀 Enhancement
