@@ -1,3 +1,15 @@
+# 1.7.0 (Wed Nov 01 2023)
+
+#### 🚀 Enhancement
+
+- fix: remove unused components and fix line-height [#79](https://github.com/expenseapp-io/design-system/pull/79) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.6.2 (Sat Oct 28 2023)
 
 #### 🐛 Bug Fix
