@@ -8,6 +8,7 @@
 @import "./components/input.css";
 @import "./components/form-control.css";
 @import "./components/select.css";
+@import "./components/notification.css";
 
 @import "./components/dialog.css";
 @import "./components/date-picker.css";

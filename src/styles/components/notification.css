@@ -1,0 +1,72 @@
+:root {
+  --notification-background: var(--white);
+  --notification-border: var(--neutral-0);
+  --notification-error: #e9232f;
+  --notification-success: #50a931;
+}
+
+.dark-theme {
+  --notification-background: var(--neutral-9);
+  --notification-border: var(--neutral-8);
+}
+
+.notification {
+  position: relative;
+
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  padding: var(--space-6) var(--space-6) var(--space-6)
+    calc(12px + var(--space-6));
+
+  color: var(--text-primary);
+
+  background: var(--notification-background);
+  border: 1px solid var(--notification-border);
+  border-radius: var(--corner-5);
+  box-shadow: var(--dialog-shadow);
+}
+
+.notification-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.notification::after {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 12px;
+  height: 100%;
+}
+
+.notification-success::after {
+  background: var(--notification-success);
+}
+
+.notification-error::after {
+  background: var(--notification-error);
+}
+
+.notification-title {
+  --font-scale: 1;
+
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  font-weight: bold;
+  line-height: var(--line-height-scale);
+  color: var(--text-primary);
+}
+
+.notification-description {
+  --font-scale: 1;
+
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
+  color: var(--text-secondary);
+}
