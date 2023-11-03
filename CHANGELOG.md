@@ -1,3 +1,15 @@
+# 1.10.1 (Fri Nov 03 2023)
+
+#### 🐛 Bug Fix
+
+- fix: avatar component import [#83](https://github.com/expenseapp-io/design-system/pull/83) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.10.0 (Fri Nov 03 2023)
 
 #### 🚀 Enhancement
