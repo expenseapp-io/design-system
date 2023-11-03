@@ -1,3 +1,15 @@
+# 1.10.0 (Fri Nov 03 2023)
+
+#### 🚀 Enhancement
+
+- feat: avatar component [#82](https://github.com/expenseapp-io/design-system/pull/82) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.9.0 (Thu Nov 02 2023)
 
 #### 🚀 Enhancement
