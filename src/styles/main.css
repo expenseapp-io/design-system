@@ -3,6 +3,7 @@
 @import "./base/typography.css";
 
 /* Components */
+@import "./components/avatar.css";
 @import "./components/button.css";
 @import "./components/icon-button.css";
 @import "./components/input.css";
