@@ -1,3 +1,15 @@
+# 1.10.2 (Sun Nov 12 2023)
+
+#### 🐛 Bug Fix
+
+- fix: text-primary color [#84](https://github.com/expenseapp-io/design-system/pull/84) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.10.1 (Fri Nov 03 2023)
 
 #### 🐛 Bug Fix
