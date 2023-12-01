@@ -1,3 +1,27 @@
+# 1.10.3 (Fri Dec 01 2023)
+
+### Release Notes
+
+#### New Release is Coming ([#88](https://github.com/expenseapp-io/design-system/pull/88))
+
+This section is for `auto` library
+
+---
+
+#### 🐛 Bug Fix
+
+- New Release is Coming [#88](https://github.com/expenseapp-io/design-system/pull/88) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### 📝 Documentation
+
+- docs: add PR template [#85](https://github.com/expenseapp-io/design-system/pull/85) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.10.2 (Sun Nov 12 2023)
 
 #### 🐛 Bug Fix
