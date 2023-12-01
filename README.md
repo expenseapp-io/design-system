@@ -30,3 +30,5 @@ Design System for Monout application.
 
 Deploy 1
 Deploy 2
+
+Deploy 1 - Without Release Notes
