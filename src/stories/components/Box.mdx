@@ -1,0 +1,31 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+
+<Meta title="Components/Box" />
+
+# Box
+
+Box component could be used for message with no data
+
+<UnstyledWithTheme>
+  <div className="box">
+    <span>You don't have anything yet</span>
+  </div>
+</UnstyledWithTheme>
+
+As well as some kind of box for spinner
+
+<UnstyledWithTheme>
+  <div className="box">
+    <div className="spinner" />
+  </div>
+</UnstyledWithTheme>
+
+We could also add any element we want, to make it a more complex
+
+<UnstyledWithTheme>
+  <div className="box" style={{ gap: 16 }}>
+    <span>You don't have an account?</span>
+    <button type="button" className="button">Register</button>
+  </div>
+</UnstyledWithTheme>
