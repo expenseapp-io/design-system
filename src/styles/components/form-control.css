@@ -2,10 +2,12 @@
 
 :root {
   --form-control-label: var(--neutral-6);
+  --form-control-error: #d80000;
 }
 
 .dark-theme {
   --form-control-label: var(--neutral-5);
+  --form-control-error: #d01818;
 }
 
 .form-control {
@@ -16,4 +18,9 @@
 
 .form-control-label {
   color: var(--form-control-label);
+}
+
+.form-control-asterix,
+.form-control-error-message {
+  color: var(--form-control-error);
 }
