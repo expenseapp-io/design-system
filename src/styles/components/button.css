@@ -1,19 +1,51 @@
 @import "../abstracts/variables.css";
 
 :root {
-  --button-primary-background: var(--neutral-9);
-  --button-primary-foreground: var(--white);
-  --button-primary-background-on-hover: var(--neutral-8);
-  --button-primary-background-on-disabled: var(--neutral-1);
-  --button-primary-foreground-on-disabled: var(--neutral-6);
+  --button-background: var(--neutral-9);
+  --button-foreground: var(--white);
+  --button-background-on-hover: var(--neutral-8);
+  --button-background-on-disabled: var(--neutral-1);
+  --button-foreground-on-disabled: var(--neutral-6);
+}
+
+.button-secondary {
+  --button-background: var(--neutral-1);
+  --button-foreground: var(--neutral-9);
+  --button-background-on-hover: var(--neutral-2);
+  --button-background-on-disabled: var(--neutral-8);
+  --button-foreground-on-disabled: var(--neutral-2);
+}
+
+.button-danger {
+  --button-background: #c60000;
+  --button-foreground: white;
+  --button-background-on-hover: #d90000;
+  --button-background-on-disabled: var(--neutral-8);
+  --button-foreground-on-disabled: var(--neutral-2);
 }
 
 .dark-theme {
-  --button-primary-background: var(--white);
-  --button-primary-foreground: var(--neutral-9);
-  --button-primary-background-on-hover: var(--neutral-1);
-  --button-primary-background-on-disabled: var(--neutral-8);
-  --button-primary-foreground-on-disabled: var(--neutral-2);
+  --button-background: var(--white);
+  --button-foreground: var(--neutral-9);
+  --button-background-on-hover: var(--neutral-1);
+  --button-background-on-disabled: var(--neutral-8);
+  --button-foreground-on-disabled: var(--neutral-2);
+}
+
+.dark-theme .button-secondary {
+  --button-background: var(--neutral-8);
+  --button-foreground: var(--white);
+  --button-background-on-hover: var(--neutral-7);
+  --button-background-on-disabled: var(--neutral-1);
+  --button-foreground-on-disabled: var(--neutral-6);
+}
+
+.dark-theme .button-danger {
+  --button-background: #c60000;
+  --button-foreground: white;
+  --button-background-on-hover: #d90000;
+  --button-background-on-disabled: var(--neutral-8);
+  --button-foreground-on-disabled: var(--neutral-2);
 }
 
 /* Base button will always be a primary one */
@@ -33,10 +65,10 @@
   font: inherit;
   font-size: calc(var(--font-scale) * var(--font-base-size));
   line-height: var(--line-height-scale);
-  color: var(--button-primary-foreground);
+  color: var(--button-foreground);
   text-decoration: none;
 
-  background: var(--button-primary-background);
+  background: var(--button-background);
   border: none;
   border-radius: var(--corner-5);
 }
@@ -44,11 +76,11 @@
 .button:hover,
 .button:active,
 .button:focus {
-  background: var(--button-primary-background-on-hover);
+  background: var(--button-background-on-hover);
 }
 
 .button[disabled] {
   cursor: not-allowed;
-  color: var(--button-primary-foreground-on-disabled);
-  background: var(--button-primary-background-on-disabled);
+  color: var(--button-foreground-on-disabled);
+  background: var(--button-background-on-disabled);
 }

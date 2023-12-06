@@ -6,8 +6,15 @@ import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
 # Button
 
 <UnstyledWithTheme>
-  <div style={{ display: "flex", gap: "16px" }}>
-    <button className="button">Primary</button>
+  <div style={{ display: "grid", gap: "16px" }}>
+    <h2>Primary</h2>
+    <button className="button">Default</button>
     <button className="button" disabled>Disabled</button>
+    <h2>Secondary</h2>
+    <button className="button button-secondary">Default</button>
+    <button className="button button-secondary" disabled>Disabled</button>
+    <h2>Danger</h2>
+    <button className="button button-danger">Default</button>
+    <button className="button button-danger" disabled>Disabled</button>
   </div>
 </UnstyledWithTheme>
