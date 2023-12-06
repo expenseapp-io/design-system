@@ -1,0 +1,30 @@
+.widget {
+  --app-widget-inline-padding: var(--space-8);
+
+  position: relative;
+  color: var(--text-secondary);
+  background: var(--box-background);
+  border-radius: var(--corner-5);
+}
+
+.widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-6) var(--app-widget-inline-padding);
+}
+
+.widget-title {
+  --font-scale: 1;
+
+  margin: 0;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
+  color: var(--text-secondary);
+}
+
+.widget-content {
+  display: grid;
+  gap: var(--space-6);
+  padding: 0 var(--app-widget-inline-padding) 24px;
+}

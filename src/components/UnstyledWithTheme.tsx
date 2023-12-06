@@ -26,11 +26,11 @@ function UnstyledWithTheme(props: Props) {
     );
   }
 
-  function renderHeader(title: string) {
-    return (
-      <div style={{ marginBottom: "12px", fontWeight: "bold" }}>{title}</div>
-    );
-  }
+  // function renderHeader(title: string) {
+  //   return (
+  //     <div style={{ marginBottom: "12px", fontWeight: "bold" }}>{title}</div>
+  //   );
+  // }
 
   return (
     <Unstyled style={{ paddingBlockEnd: 32 }}>
@@ -43,11 +43,11 @@ function UnstyledWithTheme(props: Props) {
         }}
       >
         <div className="light-theme">
-          {renderHeader("Light Theme")}
+          {/* {renderHeader("Light Theme")} */}
           {renderChild()}
         </div>
         <div className="dark-theme">
-          {renderHeader("Dark Theme")}
+          {/* {renderHeader("Dark Theme")} */}
           {renderChild()}
         </div>
       </div>

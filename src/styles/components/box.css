@@ -1,11 +1,13 @@
 :root {
   --box-background: var(--white);
   --box-foreground: var(--neutral-7);
+  --box-1-background: var(--neutral-0);
 }
 
 .dark-theme {
   --box-background: var(--neutral-9);
   --box-foreground: var(--neutral-3);
+  --box-1-background: var(--neutral-8);
 }
 
 .box {
@@ -21,4 +23,8 @@
 
   background: var(--box-background);
   border-radius: var(--corner-5);
+}
+
+.box-1 {
+  background: var(--box-1-background);
 }
