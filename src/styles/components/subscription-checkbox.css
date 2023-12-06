@@ -1,0 +1,70 @@
+:root {
+  --checkbox-background: rgb(0 0 0 / 5%);
+  --checkbox-foreground: var(--neutral-3);
+  --checkbox-completed-background: #e9f7e9;
+  --checkbox-completed-foreground: #639863;
+}
+
+.dark-theme {
+  --checkbox-background: rgb(255 255 255 / 10%);
+  --checkbox-foreground: var(--neutral-6);
+  --checkbox-completed-background: #1d2c1d;
+  --checkbox-completed-foreground: #639863;
+}
+
+.subscription-checkbox {
+  cursor: pointer;
+
+  position: relative;
+
+  display: inline-flex;
+
+  width: 46px;
+  height: 46px;
+
+  color: var(--icon-button-foreground);
+
+  background: var(--checkbox-background);
+  border: none;
+  border-radius: 999px;
+}
+
+.subscription-checkbox-completed,
+.subscription-checkbox-completed:hover {
+  cursor: default;
+  color: var(--checkbox-completed-foreground);
+  background: var(--checkbox-completed-background);
+}
+
+.subscription-checkbox-check,
+.subscription-checkbox-category {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.subscription-checkbox-check {
+  visibility: none;
+  opacity: 0;
+}
+
+.subscription-checkbox-completed .subscription-checkbox-check,
+.subscription-checkbox:hover .subscription-checkbox-check {
+  visibility: visible;
+  opacity: 1;
+}
+
+.subscription-checkbox-completed .subscription-checkbox-category,
+.subscription-checkbox:hover .subscription-checkbox-category {
+  visibility: hidden;
+  opacity: 0;
+}
