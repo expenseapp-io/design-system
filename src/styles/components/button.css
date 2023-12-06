@@ -41,11 +41,11 @@
 }
 
 .dark-theme .button-danger {
-  --button-background: #c60000;
-  --button-foreground: white;
-  --button-background-on-hover: #d90000;
-  --button-background-on-disabled: var(--neutral-8);
-  --button-foreground-on-disabled: var(--neutral-2);
+  --button-background: #700;
+  --button-foreground: var(--white);
+  --button-background-on-hover: #9f0000;
+  --button-background-on-disabled: var(--neutral-1);
+  --button-foreground-on-disabled: var(--neutral-6);
 }
 
 /* Base button will always be a primary one */

@@ -5,6 +5,7 @@
 /* Components */
 @import "./components/alert.css";
 @import "./components/avatar.css";
+@import "./components/budget.css";
 @import "./components/box.css";
 @import "./components/button.css";
 @import "./components/button-pill.css";

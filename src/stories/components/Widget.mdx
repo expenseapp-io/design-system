@@ -4,14 +4,108 @@ import PlusIcon from '../../icons/PlusIcon.svg'
 import AlertIcon from '../../icons/AlertIcon.svg';
 import MoreVertical from '../../icons/MoreVertical.svg';
 import CheckIcon from '../../icons/CheckIcon.svg';
+import ArrowDown from '../../icons/ArrowDown.svg';
+import ArrowUp from '../../icons/ArrowUp.svg';
 
 <Meta title="Components/Widget" />
 
 # Widget
 
+## Widget for Limits by Category
+
+Shows a list of limits by each category, as well as progress and additional information, like how much you could spend per day
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-header">
+      <h3 className="widget-title">Limits by Category</h3>
+      <button type="button" className="icon-button">
+        <PlusIcon />
+      </button>
+    </div>
+    <div className="widget-content">
+      <ul className="budget-list">
+        <li className="budget-container">
+          <div className="budget">
+            <div className="emoji-circle">✈️</div>
+            <div className="budget-information">
+              <div className="budget-description">
+                <div className="budget-description-category">Travel</div>
+                <div className="budget-description-amount">640 USD <i>left</i></div>
+              </div>
+              <div className="budget-progress-background">
+                <div
+                  className="budget-progress-foreground"
+                  style={{
+                    width: `60%`,
+                  }}
+                />
+              </div>
+            </div>
+            <button type="button" className="icon-button">
+              <ArrowUp />
+            </button>
+          </div>
+          <div className="budget-additional-list-container">
+            <ul className="budget-additional-list">
+              <li>Your total limit is <b>1200 USD</b></li>
+              <li>Spent <b>300 USD</b> already</li>
+              <li>You need to spend less than <b>60 USD</b> per day</li>
+            </ul>
+            <div className="budget-buttons-group">
+              <button type="button" className="button button-secondary">Edit</button>
+              <button type="button" className="button button-danger">Remove</button>
+            </div>
+          </div>
+        </li>
+        <li className="budget">
+          <div className="emoji-circle">🍕</div>
+          <div className="budget-information">
+            <div className="budget-description">
+              <div className="budget-description-category">Food</div>
+              <div className="budget-description-amount">20 USD <i>left</i></div>
+            </div>
+            <div className="budget-progress-background budget-progress-close">
+              <div
+                className="budget-progress-foreground"
+                style={{
+                  width: `10%`,
+                }}
+              />
+            </div>
+          </div>
+          <button type="button" className="icon-button">
+            <ArrowDown />
+          </button>
+        </li>
+        <li className="budget">
+          <div className="emoji-circle">📱</div>
+          <div className="budget-information">
+            <div className="budget-description">
+              <div className="budget-description-category">Accessories</div>
+              <div className="budget-description-amount">25 USD <i>over</i></div>
+            </div>
+            <div className="budget-progress-background budget-progress-overspent">
+              <div
+                className="budget-progress-foreground"
+                style={{
+                  width: `0%`,
+                }}
+              />
+            </div>
+          </div>
+          <button type="button" className="icon-button">
+            <ArrowDown />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
 ## Widget for Subscriptions
 
-Useful for cases where we don't have any data yet, but we could add something new
+Shows a list of user's subscriptions
 
 <UnstyledWithTheme>
   <div className="widget">
@@ -22,7 +116,7 @@ Useful for cases where we don't have any data yet, but we could add something ne
       </button>
     </div>
     <div className="widget-content">
-      <div className="subscriptions-list">
+      <div>
         <li className="subscription">
           <button className="emoji-circle-with-check">
             <span className="emoji-circle-with-check-category">🍕</span>
