@@ -1,0 +1,80 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+
+<Meta title="Components/WalletCard" />
+
+# Wallet Card
+
+A `.wallet-card` component is made to show wallets details.
+
+<UnstyledWithTheme>
+  <div className="wallet-card">
+    <div class="wallet-card-content">
+      <div className="wallet-card-name">Chase</div>
+      <div className="wallet-card-balance">1000 USD</div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+You could use them as links to be able to navigate
+
+<UnstyledWithTheme>
+  <a href="#" className="wallet-card">
+    <div class="wallet-card-content">
+      <div className="wallet-card-name">Chase</div>
+      <div className="wallet-card-balance">1000 USD</div>
+    </div>
+  </a>
+</UnstyledWithTheme>
+
+The tile of wallet could also contain emojis
+
+<UnstyledWithTheme>
+  <a href="#" className="wallet-card">
+    <div class="wallet-card-content">
+      <div className="wallet-card-name">🇺🇸 Chase</div>
+      <div className="wallet-card-balance">1000 USD</div>
+    </div>
+  </a>
+</UnstyledWithTheme>
+
+If the name of the wallet is too long we should add text-overflow rule
+
+
+<UnstyledWithTheme>
+  <a href="#" className="wallet-card">
+    <div class="wallet-card-content">
+      <div className="wallet-card-name">A really long name that doesn't fit the wallet card and could be easly overflow the available content</div>
+      <div className="wallet-card-balance">1000 USD</div>
+    </div>
+  </a>
+</UnstyledWithTheme>
+
+In some case we want to add sorting for wallets
+
+<UnstyledWithTheme>
+  <a href="#" className="wallet-card">
+    <div class="wallet-card-icon">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 6H8.00635M8 12H8.00635M8 18H8.00635M15.9937 6H16M15.9937 12H16M15.9937 18H16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div class="wallet-card-content">
+      <div className="wallet-card-name">A really long name that doesn't fit the wallet card and could be easly overflow the available content</div>
+      <div className="wallet-card-balance">1000 USD</div>
+    </div>
+  </a>
+</UnstyledWithTheme>
+
+❌ Don't use wallet cards inside a box
+
+<UnstyledWithTheme>
+  <div className="box">
+    <a href="#" className="wallet-card">
+      <div class="wallet-card-content">
+        <div className="wallet-card-name">🇺🇸 Chase</div>
+        <div className="wallet-card-balance">1000 USD</div>
+      </div>
+    </a>
+  </div>
+</UnstyledWithTheme>

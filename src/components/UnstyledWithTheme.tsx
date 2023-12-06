@@ -37,8 +37,9 @@ function UnstyledWithTheme(props: Props) {
       <div
         style={{
           display: "grid",
+          maxWidth: "100%",
           gap: 16,
-          gridTemplateColumns: props.vertical ? "1fr" : "1fr 1fr",
+          gridTemplateColumns: props.vertical ? "100%" : "50% 50%",
         }}
       >
         <div className="light-theme">
