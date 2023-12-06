@@ -45,6 +45,10 @@
   border-radius: var(--corner-5);
 }
 
+.select-small {
+  padding-block: var(--space-3);
+}
+
 .select:focus {
   border-color: var(--focus-ring);
 }

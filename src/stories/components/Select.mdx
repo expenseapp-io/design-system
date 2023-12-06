@@ -101,3 +101,20 @@ In case you want to add an icon, you'll need to wrap the select component with `
   </div>
 </div>
 ```
+## Small Select Variant
+
+Sometimes you might need small variant
+
+<Unstyled>
+  <div className="select-container" style={{ width: 300 }}>
+    <select className="select select-small">
+      <option value="no-icon">Select without arrows</option>
+      <option value="today">Today</option>
+      <option value="yesteday">Yesterday</option>
+      <option value="thursday">Thursday</option>
+    </select>
+    <div className="select-icon">
+      <CaretUpDownIcon />
+    </div>
+  </div>
+</Unstyled>
