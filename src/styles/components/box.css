@@ -15,10 +15,10 @@
   align-items: center;
   justify-content: center;
 
-  padding: 16px;
+  padding: var(--space-6);
 
   color: var(--box-foreground);
 
   background: var(--box-background);
-  border-radius: 6px;
+  border-radius: var(--corner-5);
 }
