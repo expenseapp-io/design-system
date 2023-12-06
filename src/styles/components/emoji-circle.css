@@ -1,0 +1,79 @@
+:root {
+  --emoji-circle-background: rgb(0 0 0 / 5%);
+  --emoji-circle-foreground: var(--neutral-3);
+  --emoji-circle-completed-background: #e9f7e9;
+  --emoji-circle-completed-foreground: #639863;
+}
+
+.dark-theme {
+  --emoji-circle-background: rgb(255 255 255 / 10%);
+  --emoji-circle-foreground: var(--neutral-6);
+  --emoji-circle-completed-background: #1d2c1d;
+  --emoji-circle-completed-foreground: #639863;
+}
+
+.emoji-circle,
+.emoji-circle-with-check {
+  --font-scale: 0.85;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 46px;
+  height: 46px;
+
+  font: inherit;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
+  color: var(--icon-button-foreground);
+
+  background: var(--emoji-circle-background);
+  border: none;
+  border-radius: 999px;
+}
+
+.emoji-circle-with-check {
+  cursor: pointer;
+  position: relative;
+}
+
+.emoji-circle-with-check-completed,
+.emoji-circle-with-check-completed:hover {
+  cursor: default;
+  color: var(--emoji-circle-completed-foreground);
+  background: var(--emoji-circle-completed-background);
+}
+
+.emoji-circle-with-check-check,
+.emoji-circle-with-check-category {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  transition: opacity 0.2s, visibility 0.2s;
+}
+
+.emoji-circle-with-check-check {
+  visibility: none;
+  opacity: 0;
+}
+
+.emoji-circle-with-check-completed .emoji-circle-with-check-check,
+.emoji-circle-with-check:hover .emoji-circle-with-check-check {
+  visibility: visible;
+  opacity: 1;
+}
+
+.emoji-circle-with-check-completed .emoji-circle-with-check-category,
+.emoji-circle-with-check:hover .emoji-circle-with-check-category {
+  visibility: hidden;
+  opacity: 0;
+}
