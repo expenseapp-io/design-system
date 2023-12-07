@@ -17,11 +17,12 @@
   --font-scale: 0.85;
 
   display: inline-flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
 
   font: inherit;
   font-size: calc(var(--font-scale) * var(--font-base-size));

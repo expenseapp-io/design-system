@@ -1,0 +1,46 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import MoreVertical from '../../icons/MoreVertical.svg'
+
+<Meta title="Components/Transaction" />
+
+# Transaction
+
+<UnstyledWithTheme>
+  <ul className="transactions-list">
+    <div className="transaction-section">
+      <h3 className="transaction-section-title">Dec 7, 2023</h3>
+    </div>
+    <li className="transaction">
+      <div className="emoji-circle">🍕</div>
+      <div className="transaction-information">
+        <p className="transaction-information-amount">86 USD</p>
+        <p className="transaction-information-description">Food</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+    <li className="transaction">
+      <div className="emoji-circle">✈️</div>
+      <div className="transaction-information">
+        <p className="transaction-information-amount">480 USD</p>
+        <p className="transaction-information-description">A trip flight Monaco - Norway - Turkey - New York</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li><div className="transaction-section">
+      <h3 className="transaction-section-title">Dec 6, 2023</h3>
+    </div>
+    <li className="transaction">
+      <div className="emoji-circle">🦄</div>
+      <div className="transaction-information">
+        <p className="transaction-information-amount">48 USD</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+  </ul>
+</UnstyledWithTheme>
