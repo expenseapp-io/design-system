@@ -1,0 +1,36 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import CheckIcon from '../../icons/CheckIcon.svg'
+
+<Meta title="Components/EmojiCircle" />
+
+# EmojiCircle
+
+This emoji circle will be used in categories, transactions, subscriptions, etc.
+
+<UnstyledWithTheme>
+  <div className="box">
+    <div className="emoji-circle">🍕</div>
+  </div>
+</UnstyledWithTheme>
+
+
+## With Check
+
+You can hover on emoji to see check. This will allow us to call Mark Subscription As Completed modal.
+
+<UnstyledWithTheme>
+  <div className="box">
+    <button className="emoji-circle-with-check">
+      <span className="emoji-circle-with-check-category">🍕</span>
+      <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+    </button>
+  </div>
+  <br />
+  <div className="box">
+    <button className="emoji-circle-with-check emoji-circle-with-check-completed">
+      <span className="emoji-circle-with-check-category">🍕</span>
+      <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+    </button>
+  </div>
+</UnstyledWithTheme>

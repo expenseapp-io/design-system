@@ -1,0 +1,92 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import MoreVertical from '../../icons/MoreVertical.svg'
+
+<Meta title="Components/Card" />
+
+# Card
+
+## Transactions
+
+<UnstyledWithTheme>
+  <ul className="card-list">
+    <div className="card-section">
+      <h3 className="card-section-title">Dec 7, 2023</h3>
+    </div>
+    <li className="card">
+      <div className="emoji-circle">🍕</div>
+      <div className="card-information">
+        <p className="card-information-primary">86 USD</p>
+        <p className="card-information-secondary">Food</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+    <li className="card">
+      <div className="emoji-circle">✈️</div>
+      <div className="card-information">
+        <p className="card-information-primary">480 USD</p>
+        <p className="card-information-secondary">A cheapest flight between Monaco - Norway - Turkey - New York for a week</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+    <div className="card-section">
+      <h3 className="card-section-title">Dec 6, 2023</h3>
+    </div>
+    <li className="card">
+      <div className="emoji-circle">🦄</div>
+      <div className="card-information">
+        <p className="card-information-primary">48 USD</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+  </ul>
+</UnstyledWithTheme>
+
+## Categories
+
+<UnstyledWithTheme>
+  <ul className="card-list">
+    <li className="card">
+      <div className="emoji-circle">🍕</div>
+      <div className="card-information">
+        <p className="card-information-primary">Food</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+    <li className="card">
+      <div className="emoji-circle">✈️</div>
+      <div className="card-information">
+        <p className="card-information-primary">Travel</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+    <li className="card">
+      <div className="emoji-circle">🥎</div>
+      <div className="card-information">
+        <p className="card-information-primary">Tennis</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+    <li className="card">
+      <div className="emoji-circle">🏛️</div>
+      <div className="card-information">
+        <p className="card-information-primary">Government</p>
+      </div>
+      <button type="button" className="icon-button">
+        <MoreVertical />
+      </button>
+    </li>
+  </ul>
+</UnstyledWithTheme>

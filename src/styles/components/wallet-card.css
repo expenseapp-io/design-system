@@ -1,0 +1,43 @@
+.wallet-card {
+  display: flex;
+  gap: var(--space-6);
+
+  padding: var(--space-6);
+
+  text-decoration: none;
+
+  background: var(--box-background);
+  border-radius: var(--corner-5);
+}
+
+.wallet-card-content {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  min-width: 0;
+}
+
+.wallet-card-name {
+  overflow: hidden;
+
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-secondary);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wallet-card-balance {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--text-primary);
+}
+
+.wallet-card-icon {
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+}

@@ -26,27 +26,28 @@ function UnstyledWithTheme(props: Props) {
     );
   }
 
-  function renderHeader(title: string) {
-    return (
-      <div style={{ marginBottom: "12px", fontWeight: "bold" }}>{title}</div>
-    );
-  }
+  // function renderHeader(title: string) {
+  //   return (
+  //     <div style={{ marginBottom: "12px", fontWeight: "bold" }}>{title}</div>
+  //   );
+  // }
 
   return (
     <Unstyled style={{ paddingBlockEnd: 32 }}>
       <div
         style={{
           display: "grid",
+          maxWidth: "100%",
           gap: 16,
-          gridTemplateColumns: props.vertical ? "1fr" : "1fr 1fr",
+          gridTemplateColumns: props.vertical ? "100%" : "50% 50%",
         }}
       >
         <div className="light-theme">
-          {renderHeader("Light Theme")}
+          {/* {renderHeader("Light Theme")} */}
           {renderChild()}
         </div>
         <div className="dark-theme">
-          {renderHeader("Dark Theme")}
+          {/* {renderHeader("Dark Theme")} */}
           {renderChild()}
         </div>
       </div>

@@ -32,7 +32,9 @@
   --corner-5: 12px;
 
   /* Semantic Colors */
-  --body-background: var(--white);
+
+  /* TODO: Add body-background color to primitive tokens */
+  --body-background: #f0f0f0;
   --text-primary: var(--neutral-9);
   --text-secondary: var(--neutral-6);
   --text-disabled: var(--neutral-3);

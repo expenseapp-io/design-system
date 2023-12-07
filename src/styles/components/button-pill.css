@@ -1,0 +1,72 @@
+:root {
+  --button-pill-button-background: none;
+  --button-pill-border: var(--neutral-0);
+  --button-pill-button-foreground: var(--neutral-6);
+  --button-pill-button-foreground-on-hover: var(--neutral-7);
+  --button-pill-button-active-background: var(--neutral-0);
+  --button-pill-button-active-foreground: var(--black);
+}
+
+.dark-theme {
+  --button-pill-button-background: none;
+  --button-pill-border: var(--neutral-7);
+  --button-pill-button-foreground: var(--neutral-3);
+  --button-pill-button-foreground-on-hover: var(--neutral-0);
+  --button-pill-button-active-background: var(--neutral-7);
+  --button-pill-button-active-foreground: var(--white);
+}
+
+.button-pill {
+  display: flex;
+  flex: 1;
+  gap: 16px;
+
+  padding: 4px;
+
+  border: 2px solid var(--button-pill-border);
+  border-radius: 999px;
+}
+
+.button-pill button {
+  --font-scale: 1;
+
+  cursor: pointer;
+
+  display: inline-flex;
+  flex: 1;
+  gap: var(--space-4);
+  align-items: center;
+  justify-content: center;
+
+  min-width: 90px;
+  min-height: 48px;
+  margin: 0;
+  padding: var(--space-4) var(--space-5);
+
+  font: inherit;
+  font-size: calc(var(--font-scale) * var(--font-base-size));
+  line-height: var(--line-height-scale);
+  text-decoration: none;
+
+  border: none;
+  border-radius: 999px;
+}
+
+.button-pill button:not(.button-pill-active) {
+  color: var(--button-pill-button-foreground);
+  background: var(--button-pill-button-background);
+}
+
+.button-pill button:not(.button-pill-active):hover,
+.button-pill button:not(.button-pill-active):focus {
+  color: var(--button-pill-button-foreground-on-hover);
+  background: none;
+}
+
+.button-pill-active,
+.button-pill-active:hover,
+.button-pill-active:focus {
+  cursor: default;
+  color: var(--button-pill-button-active-foreground);
+  background: var(--button-pill-button-active-background);
+}

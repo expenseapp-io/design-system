@@ -1,0 +1,24 @@
+:root {
+  --alert-background: #a85122;
+  --alert-foreground: #fbf6ed;
+}
+
+.alert {
+  display: flex;
+  gap: var(--space-6);
+  align-items: flex-start;
+
+  padding: var(--space-6);
+
+  line-height: 1.5rem;
+  color: var(--alert-foreground);
+
+  background: var(--alert-background);
+  border-radius: var(--corner-5);
+}
+
+.alert-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+}

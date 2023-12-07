@@ -1,0 +1,24 @@
+.subscription {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.subscription-information {
+  display: flex;
+  flex-grow: 1;
+  gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.subscription-information-name {
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.subscription-information-amount {
+  color: var(--text-primary);
+  text-align: right;
+}

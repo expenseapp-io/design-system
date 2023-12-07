@@ -1,0 +1,34 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import AlertIcon from '../../icons/AlertIcon.svg';
+
+<Meta title="Components/Alert" />
+
+# Alert
+
+<UnstyledWithTheme>
+  <div className="box">
+    <div className="alert">
+      <span className="alert-icon">
+        <AlertIcon />
+      </span>
+      <span>One line message</span>
+    </div>
+  </div>
+  <br />
+  <div className="box">
+    <div className="alert">
+      <span className="alert-icon">
+        <AlertIcon />
+      </span>
+      <span>A really long message that goes up to the next line and expands alert container</span>
+    </div>
+  </div>
+  <br />
+  <div className="alert">
+    <span className="alert-icon">
+      <AlertIcon />
+    </span>
+    <span>Same alert but not inside the box container</span>
+  </div>
+</UnstyledWithTheme>

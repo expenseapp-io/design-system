@@ -1,0 +1,280 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import PlusIcon from '../../icons/PlusIcon.svg'
+import AlertIcon from '../../icons/AlertIcon.svg';
+import MoreVertical from '../../icons/MoreVertical.svg';
+import CheckIcon from '../../icons/CheckIcon.svg';
+import ArrowDown from '../../icons/ArrowDown.svg';
+import ArrowUp from '../../icons/ArrowUp.svg';
+
+<Meta title="Components/Widget" />
+
+# Widget
+
+## Widget for Limits by Category
+
+Shows a list of limits by each category, as well as progress and additional information, like how much you could spend per day
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-header">
+      <h3 className="widget-title">Limits by Category</h3>
+      <button type="button" className="icon-button">
+        <PlusIcon />
+      </button>
+    </div>
+    <div className="widget-content">
+      <ul className="budget-list">
+        <li className="budget-container">
+          <div className="budget">
+            <div className="emoji-circle">✈️</div>
+            <div className="budget-information">
+              <div className="budget-description">
+                <div className="budget-description-category">Travel</div>
+                <div className="budget-description-amount">640 USD <i>left</i></div>
+              </div>
+              <div className="budget-progress-background">
+                <div
+                  className="budget-progress-foreground"
+                  style={{
+                    width: `60%`,
+                  }}
+                />
+              </div>
+            </div>
+            <button type="button" className="icon-button">
+              <ArrowUp />
+            </button>
+          </div>
+          <div className="budget-additional-list-container">
+            <ul className="budget-additional-list">
+              <li>Your total limit is <b>1200 USD</b></li>
+              <li>Spent <b>300 USD</b> already</li>
+              <li>You need to spend less than <b>60 USD</b> per day</li>
+            </ul>
+            <div className="budget-buttons-group">
+              <button type="button" className="button button-secondary">Edit</button>
+              <button type="button" className="button button-danger">Remove</button>
+            </div>
+          </div>
+        </li>
+        <li className="budget">
+          <div className="emoji-circle">🍕</div>
+          <div className="budget-information">
+            <div className="budget-description">
+              <div className="budget-description-category">Food</div>
+              <div className="budget-description-amount">20 USD <i>left</i></div>
+            </div>
+            <div className="budget-progress-background budget-progress-close">
+              <div
+                className="budget-progress-foreground"
+                style={{
+                  width: `10%`,
+                }}
+              />
+            </div>
+          </div>
+          <button type="button" className="icon-button">
+            <ArrowDown />
+          </button>
+        </li>
+        <li className="budget">
+          <div className="emoji-circle">📱</div>
+          <div className="budget-information">
+            <div className="budget-description">
+              <div className="budget-description-category">Accessories</div>
+              <div className="budget-description-amount">25 USD <i>over</i></div>
+            </div>
+            <div className="budget-progress-background budget-progress-overspent">
+              <div
+                className="budget-progress-foreground"
+                style={{
+                  width: `0%`,
+                }}
+              />
+            </div>
+          </div>
+          <button type="button" className="icon-button">
+            <ArrowDown />
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+## Widget for Subscriptions
+
+Shows a list of user's subscriptions
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-header">
+      <h3 className="widget-title">Subscriptions</h3>
+      <button type="button" className="icon-button">
+        <PlusIcon />
+      </button>
+    </div>
+    <div className="widget-content">
+      <div>
+        <li className="subscription">
+          <button className="emoji-circle-with-check">
+            <span className="emoji-circle-with-check-category">🍕</span>
+            <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+          </button>
+          <div className="subscription-information">
+            <div className="subscription-information-name">Pizza on Friday</div>
+            <div className="subscription-information-amount">120 USD</div>
+          </div>
+          <button type="button" className="icon-button">
+            <MoreVertical />
+          </button>
+        </li>
+        <li className="subscription">
+          <button className="emoji-circle-with-check emoji-circle-with-check-completed">
+            <span className="emoji-circle-with-check-category">🍕</span>
+            <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+          </button>
+          <div className="subscription-information">
+            <div className="subscription-information-name">Pizza on Friday</div>
+            <div className="subscription-information-amount">120 USD</div>
+          </div>
+          <button type="button" className="icon-button">
+            <MoreVertical />
+          </button>
+        </li>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+## Empty state
+
+Useful for cases where we don't have any data yet, but we could add something new
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-header">
+      <h3 className="widget-title">Subscriptions</h3>
+      <button type="button" className="icon-button">
+        <PlusIcon />
+      </button>
+    </div>
+    <div className="widget-content">
+      <div className="box box-1">
+        <span>No data yet</span>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+
+## With Alert Message
+
+Use the aler message to notify users that they need more money based on their expenses
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-header">
+      <h3 className="widget-title">Subscriptions</h3>
+      <button type="button" className="icon-button">
+        <PlusIcon />
+      </button>
+    </div>
+    <div className="widget-content">
+      <div className="alert">
+        <span className="alert-icon">
+          <AlertIcon />
+        </span>
+        <span>You need 78.00 EUR more based on your balance and future expenses</span>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+## With Spinner
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-header">
+      <h3 className="widget-title">Subscriptions</h3>
+      <button type="button" className="icon-button">
+        <PlusIcon />
+      </button>
+    </div>
+    <div className="widget-content">
+      <div className="spinner-container">
+        <div className="spinner" />
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+## Widget without header
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-content">
+      <div>
+        <li className="subscription">
+          <button className="emoji-circle-with-check">
+            <span className="emoji-circle-with-check-category">🍕</span>
+            <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+          </button>
+          <div className="subscription-information">
+            <div className="subscription-information-name">Pizza on Friday</div>
+            <div className="subscription-information-amount">120 USD</div>
+          </div>
+          <button type="button" className="icon-button">
+            <MoreVertical />
+          </button>
+        </li>
+        <li className="subscription">
+          <button className="emoji-circle-with-check emoji-circle-with-check-completed">
+            <span className="emoji-circle-with-check-category">🍕</span>
+            <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+          </button>
+          <div className="subscription-information">
+            <div className="subscription-information-name">Pizza on Friday</div>
+            <div className="subscription-information-amount">120 USD</div>
+          </div>
+          <button type="button" className="icon-button">
+            <MoreVertical />
+          </button>
+        </li>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
+
+
+## Widget without header & actions
+
+<UnstyledWithTheme>
+  <div className="widget">
+    <div className="widget-content">
+      <div>
+        <li className="subscription">
+          <button className="emoji-circle-with-check">
+            <span className="emoji-circle-with-check-category">🍕</span>
+            <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+          </button>
+          <div className="subscription-information">
+            <div className="subscription-information-name">Pizza on Friday</div>
+            <div className="subscription-information-amount">120 USD</div>
+          </div>
+        </li>
+        <li className="subscription">
+          <button className="emoji-circle-with-check emoji-circle-with-check-completed">
+            <span className="emoji-circle-with-check-category">🍕</span>
+            <span className="emoji-circle-with-check-check"><CheckIcon /></span>
+          </button>
+          <div className="subscription-information">
+            <div className="subscription-information-name">Pizza on Friday</div>
+            <div className="subscription-information-amount">120 USD</div>
+          </div>
+        </li>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>

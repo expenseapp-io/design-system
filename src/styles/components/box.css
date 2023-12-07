@@ -1,0 +1,30 @@
+:root {
+  --box-background: var(--white);
+  --box-foreground: var(--neutral-7);
+  --box-1-background: var(--neutral-0);
+}
+
+.dark-theme {
+  --box-background: var(--neutral-9);
+  --box-foreground: var(--neutral-3);
+  --box-1-background: var(--neutral-8);
+}
+
+.box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--space-6);
+
+  color: var(--box-foreground);
+
+  background: var(--box-background);
+  border-radius: var(--corner-5);
+}
+
+.box-1 {
+  background: var(--box-1-background);
+}
