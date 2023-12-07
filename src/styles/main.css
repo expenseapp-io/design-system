@@ -9,12 +9,12 @@
 @import "./components/box.css";
 @import "./components/button.css";
 @import "./components/button-pill.css";
+@import "./components/card.css";
 @import "./components/icon-button.css";
 @import "./components/input.css";
 @import "./components/form-control.css";
 @import "./components/select.css";
 @import "./components/spinner.css";
-@import "./components/transaction.css";
 @import "./components/notification.css";
 @import "./components/wallet-card.css";
 @import "./components/emoji-circle.css";
