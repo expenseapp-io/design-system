@@ -1,3 +1,15 @@
+# 1.12.0 (Fri Dec 08 2023)
+
+#### 🚀 Enhancement
+
+- Feature/monthly reports [#93](https://github.com/expenseapp-io/design-system/pull/93) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.11.0 (Thu Dec 07 2023)
 
 #### 🚀 Enhancement
