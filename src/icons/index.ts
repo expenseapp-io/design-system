@@ -1,6 +1,12 @@
+export { default as AlertIcon } from "./AlertIcon.svg";
+export { default as ArrowDownIcon } from "./ArrowDownIcon.svg";
+export { default as ArrowUpIcon } from "./ArrowUpIcon.svg";
 export { default as CalendarIcon } from "./CalendarIcon.svg";
 export { default as CaretLeftIcon } from "./CaretLeftIcon.svg";
 export { default as CaretRightIcon } from "./CaretRightIcon.svg";
 export { default as CaretUpDownIcon } from "./CaretUpDownIcon.svg";
 export { default as CheckIcon } from "./CheckIcon.svg";
+export { default as MoreVerticalIcon } from "./MoreVerticalIcon.svg";
+export { default as PlusIcon } from "./PlusIcon.svg";
+export { default as VerticalDragAndDropIcon } from "./VerticalDragAndDropIcon.svg";
 export { default as XIcon } from "./XIcon.svg";
