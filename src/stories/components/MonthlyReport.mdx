@@ -1,0 +1,143 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import ArrowUpIcon from '../../icons/ArrowUpIcon.svg';
+import ArrowDownIcon from '../../icons/ArrowDownIcon.svg';
+
+<Meta title="Components/MonthlyReport" />
+
+# Monthly Report
+
+The component is used to show monthly report for expenses by categories, as well as total transfers.
+
+<UnstyledWithTheme vertical>
+  <div className="monthly-report-list">
+    <div className="monthly-report">
+      <div
+        className="monthly-report-header-container monthly-report-header-container-with-border"
+      >
+        <div className="monthly-report-header">
+          <div className="monthly-report-title-container">
+            <h2 className="title-3 text-secondary">Nov 10 - Dec 9</h2>
+          </div>
+          <div>
+            <p className="text text-secondary">Total Income</p>
+            <p className="text-large">1540 USD</p>
+          </div>
+          <div>
+            <p className="text text-secondary">Total Expense</p>
+            <p className="text-large">1165 USD</p>
+          </div>
+        </div>
+      </div>
+      <div className="monthly-report-expanded-container">
+        <div className="monthly-report-expanded-container-sections">
+          <div className="monthly-report-expanded-container-sections-item">
+            <table
+              className="monthly-report-table"
+            >
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Percentage</th>
+                  <th>Spent</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>🍕 Food</td>
+                  <td>27.34%</td>
+                  <td>318.52 USD</td>
+                </tr>
+                <tr>
+                  <td>🏠 Apartment</td>
+                  <td>25.90%</td>
+                  <td>301.74 USD</td>
+                </tr>
+                <tr>
+                  <td>🚌 Travel</td>
+                  <td>23.33%</td>
+                  <td>271.79 USD</td>
+                </tr>
+                <tr>
+                  <td>📱 Accessories</td>
+                  <td>14.50%</td>
+                  <td>168.93 USD</td>
+                </tr>
+                <tr>
+                  <td>🏆 Events</td>
+                  <td>5.45%</td>
+                  <td>63.48 USD</td>
+                </tr>
+                <tr>
+                  <td>💎 Subscriptions</td>
+                  <td>3.48%</td>
+                  <td>40.54 USD</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div className="monthly-report-expanded-container-sections-item">
+            <div className="monthly-report-expanded-transfers-grid">
+              <div>
+                <p className="text text-secondary">Transfers Received</p>
+                <p className="text-large">25 USD</p>
+              </div>
+              <div>
+                <p className="text text-secondary">Transfers Sent</p>
+                <p className="text-large">48 USD</p>
+              </div>
+            </div>
+          </div>
+          <button type="button" className="button button-secondary">
+            <span>Less Details</span>
+            <ArrowUpIcon />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div className="monthly-report">
+      <div
+        className="monthly-report-header-container"
+      >
+        <div className="monthly-report-header">
+          <div className="monthly-report-title-container">
+            <h2 className="title-3 text-secondary">Oct 10 - Nov 9</h2>
+          </div>
+          <div>
+            <p className="text text-secondary">Total Income</p>
+            <p className="text-large">1320 USD</p>
+          </div>
+          <div>
+            <p className="text text-secondary">Total Expense</p>
+            <p className="text-large">1048 USD</p>
+          </div>
+        </div>
+      </div>
+      <div className="monthly-report-expanded-container">
+        <button type="button" className="button button-secondary">
+          <span>More Details</span>
+          <ArrowDownIcon />
+        </button>
+      </div>
+    </div>
+    <div className="monthly-report">
+      <div
+        className="monthly-report-header-container"
+      >
+        <div className="monthly-report-header">
+          <div className="monthly-report-title-container">
+            <h2 className="title-3 text-secondary">Sep 10 - Oct 9</h2>
+          </div>
+          <div>
+            <p className="text text-secondary">Total Income</p>
+            <p className="text-large">0 USD</p>
+          </div>
+          <div>
+            <p className="text text-secondary">Total Expense</p>
+            <p className="text-large">0 USD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</UnstyledWithTheme>
