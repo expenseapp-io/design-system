@@ -1,0 +1,15 @@
+import { Meta } from "@storybook/blocks";
+import { UnstyledWithTheme } from "../../components/UnstyledWithTheme";
+import EditIcon from '../../icons/EditIcon.svg';
+import RemoveIcon from '../../icons/RemoveIcon.svg';
+
+<Meta title="Components/Menu" />
+
+# Menu
+
+<UnstyledWithTheme>
+  <div className="menu">
+    <div className="menu-item"><EditIcon width="14" height="auto" />Edit Transfer</div>
+    <div className="menu-item menu-item-danger"><RemoveIcon width="14" height="auto" />Remove Transaction</div>
+  </div>
+</UnstyledWithTheme>
