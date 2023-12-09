@@ -1,3 +1,23 @@
+# 1.13.0 (Sat Dec 09 2023)
+
+### Release Notes
+
+#### feat: menu ([#94](https://github.com/expenseapp-io/design-system/pull/94))
+
+This section is for `auto` library
+
+---
+
+#### 🚀 Enhancement
+
+- feat: menu [#94](https://github.com/expenseapp-io/design-system/pull/94) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.12.0 (Fri Dec 08 2023)
 
 #### 🚀 Enhancement
