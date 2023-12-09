@@ -1,0 +1,56 @@
+:root {
+  --menu-background: var(--white);
+  --menu-border: var(--neutral-1);
+  --menu-item-color: var(--neutral-8);
+  --menu-item-background-on-hover: var(--neutral-0);
+  --menu-item-danger-color: rgb(219 31 31);
+  --menu-item-danger-background-on-hover: rgb(255 0 0 / 10%);
+}
+
+.dark-theme {
+  --menu-background: var(--neutral-8);
+  --menu-border: var(--neutral-7);
+  --menu-item-color: var(--neutral-1);
+  --menu-item-background-on-hover: var(--neutral-7);
+  --menu-item-danger-color: rgb(219 31 31);
+  --menu-item-danger-background-on-hover: rgb(255 0 0 / 10%);
+}
+
+.menu {
+  --menu-item-padding: var(--space-3);
+  --menu-item-corner-radius: var(--corner-5);
+
+  z-index: 100;
+
+  width: max-content;
+  padding: var(--menu-item-padding);
+
+  background: var(--menu-background);
+  border: 1px solid var(--menu-border);
+  border-radius: var(--menu-item-corner-radius);
+}
+
+.menu-item {
+  cursor: pointer;
+
+  display: flex;
+  gap: 8px;
+  align-items: center;
+
+  padding: var(--space-5);
+
+  color: var(--menu-item-color);
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  background: var(--menu-item-background-on-hover);
+  border-radius: calc(
+    var(--menu-item-corner-radius) - var(--menu-item-padding)
+  );
+}
+
+.menu-item-danger {
+  --menu-item-color: var(--menu-item-danger-color);
+  --menu-item-background-on-hover: var(--menu-item-danger-background-on-hover);
+}
