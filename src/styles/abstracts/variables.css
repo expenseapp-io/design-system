@@ -1,5 +1,5 @@
 :root {
-  /* Primitive colors */
+  /* Deprecated colors */
   --neutral-0: #e6e6e6;
   --neutral-1: #cfcfcf;
   --neutral-2: #b8b8b8;
@@ -10,6 +10,34 @@
   --neutral-7: #454545;
   --neutral-8: #2e2e2e;
   --neutral-9: #171717;
+
+  /* Neutral  */
+  --neutral-25: #f9f9f9;
+  --neutral-50: #f1f1f1;
+  --neutral-100: #e2e2e2;
+  --neutral-200: #ccc;
+  --neutral-300: #a5a5a5;
+  --neutral-400: #777;
+  --neutral-500: #4b4b4b;
+  --neutral-600: #2e2e2e;
+  --neutral-700: #1b1b1b;
+  --neutral-800: #111;
+  --neutral-900: #070707;
+
+  /* Red */
+  --red-25: #fef8f8;
+  --red-50: #fdeded;
+  --red-100: #fbdbdc;
+  --red-200: #f8bdbf;
+  --red-300: #f48688;
+  --red-400: #e22e38;
+  --red-500: #931a21;
+  --red-600: #5f0d12;
+  --red-700: #3d0508;
+  --red-800: #2a0304;
+  --red-900: #180102;
+
+  /* White & Black */
   --white: #fff;
   --black: #000;
 
