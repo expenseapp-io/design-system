@@ -62,7 +62,7 @@
   /* Semantic Colors */
 
   /* TODO: Add body-background color to primitive tokens */
-  --body-background: #f0f0f0;
+  --body-background: var(--neutral-50);
   --text-primary: var(--neutral-9);
   --text-secondary: var(--neutral-6);
   --text-disabled: var(--neutral-3);
@@ -70,7 +70,7 @@
 }
 
 .dark-theme {
-  --body-background: var(--black);
+  --body-background: var(--neutral-900);
   --text-primary: var(--white);
   --text-secondary: var(--neutral-3);
   --text-disabled: var(--neutral-3);

@@ -1,12 +1,12 @@
 :root {
   --box-background: var(--white);
-  --box-foreground: var(--neutral-7);
+  --box-foreground: var(--text-secondary);
   --box-1-background: var(--neutral-0);
 }
 
 .dark-theme {
-  --box-background: var(--neutral-9);
-  --box-foreground: var(--neutral-3);
+  --box-background: var(--neutral-700);
+  --box-foreground: var(--text-secondary);
   --box-1-background: var(--neutral-8);
 }
 
