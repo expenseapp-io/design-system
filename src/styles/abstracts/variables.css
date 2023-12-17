@@ -37,6 +37,19 @@
   --red-800: #2a0304;
   --red-900: #180102;
 
+  /* Green */
+  --green-25: #eafef1;
+  --green-50: #c7fdd9;
+  --green-100: #73fcad;
+  --green-200: #49e693;
+  --green-300: #39bc77;
+  --green-400: #278754;
+  --green-500: #155634;
+  --green-600: #0a351e;
+  --green-700: #042111;
+  --green-800: #021509;
+  --green-900: #010a04;
+
   /* White & Black */
   --white: #fff;
   --black: #000;
