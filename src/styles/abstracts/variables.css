@@ -63,6 +63,19 @@
   --yellow-800: #190f00;
   --yellow-900: #0d0600;
 
+  /* Orange */
+  --orange-25: #fef8f6;
+  --orange-50: #fdeee9;
+  --orange-100: #fbdcd2;
+  --orange-200: #f8bfab;
+  --orange-300: #f58a4c;
+  --orange-400: #b4612d;
+  --orange-500: #743c1a;
+  --orange-600: #4a240d;
+  --orange-700: #2f1505;
+  --orange-800: #1f0c03;
+  --orange-900: #110501;
+
   /* White & Black */
   --white: #fff;
   --black: #000;

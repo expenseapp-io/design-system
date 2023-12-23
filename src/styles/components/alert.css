@@ -1,6 +1,6 @@
 :root {
-  --alert-background: #a85122;
-  --alert-foreground: #fbf6ed;
+  --alert-background: var(--orange-400);
+  --alert-foreground: var(--white);
 }
 
 .alert {
