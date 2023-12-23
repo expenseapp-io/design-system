@@ -1,23 +1,23 @@
 @import "../abstracts/variables.css";
 
 :root {
-  --input-background: var(--white);
-  --input-foreground: var(--neutral-9);
-  --input-placeholder: var(--neutral-6);
-  --input-background-on-disabled: var(--neutral-0);
-  --input-foreground-on-disabled: var(--neutral-6);
-  --input-border: var(--neutral-0);
-  --input-border-on-disabled: var(--neutral-0);
+  --input-background: var(--neutral-50);
+  --input-foreground: var(--neutral-800);
+  --input-placeholder: var(--neutral-400);
+  --input-background-on-disabled: var(--neutral-100);
+  --input-foreground-on-disabled: var(--neutral-500);
+  --input-border: var(--neutral-200);
+  --input-border-on-disabled: var(--neutral-200);
 }
 
 .dark-theme {
-  --input-background: var(--black);
-  --input-foreground: var(--white);
-  --input-placeholder: var(--neutral-4);
-  --input-background-on-disabled: var(--neutral-9);
-  --input-foreground-on-disabled: var(--neutral-4);
-  --input-border: var(--neutral-7);
-  --input-border-on-disabled: var(--neutral-7);
+  --input-background: var(--neutral-900);
+  --input-foreground: var(--neutral-25);
+  --input-placeholder: var(--neutral-200);
+  --input-background-on-disabled: var(--neutral-700);
+  --input-foreground-on-disabled: var(--neutral-400);
+  --input-border: var(--neutral-600);
+  --input-border-on-disabled: var(--neutral-600);
 }
 
 .input {
