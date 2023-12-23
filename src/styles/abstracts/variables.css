@@ -50,6 +50,19 @@
   --green-800: #021509;
   --green-900: #010a04;
 
+  /* Yellow */
+  --yellow-25: #fff8f1;
+  --yellow-50: #ffeedb;
+  --yellow-100: #ffddb2;
+  --yellow-200: #ffc249;
+  --yellow-300: #d49c00;
+  --yellow-400: #997000;
+  --yellow-500: #624700;
+  --yellow-600: #3e2b00;
+  --yellow-700: #261900;
+  --yellow-800: #190f00;
+  --yellow-900: #0d0600;
+
   /* White & Black */
   --white: #fff;
   --black: #000;
