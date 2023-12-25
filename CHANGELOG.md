@@ -1,3 +1,15 @@
+# 1.13.1 (Mon Dec 25 2023)
+
+#### 🐛 Bug Fix
+
+- Color fixes [#95](https://github.com/expenseapp-io/design-system/pull/95) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.13.0 (Sat Dec 09 2023)
 
 ### Release Notes
