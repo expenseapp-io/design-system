@@ -1,23 +1,29 @@
 @import "../abstracts/variables.css";
 
 :root {
-  --select-background: var(--white);
-  --select-foreground: var(--neutral-9);
-  --background-on-disabled: var(--neutral-0);
-  --foreground-on-disabled: var(--neutral-6);
-  --select-border: var(--neutral-0);
-  --select-arrows: var(--neutral-6);
-  --select-arrows-on-disabled: var(--neutral-4);
+  --select-inline-space: var(--space-5);
+  --select-block-space: var(--space-6);
+  --select-arrows: var(--neutral-500);
+  --select-background: var(--neutral-50);
+  --select-foreground: var(--neutral-800);
+  --select-border: var(--neutral-200);
+  --select-border-on-focus: var(--focus-ring);
+  --select-arrows-on-disabled: var(--neutral-300);
+  --background-on-disabled: var(--neutral-100);
+  --foreground-on-disabled: var(--neutral-500);
+  --select-border-on-disabled: var(--neutral-200);
 }
 
 .dark-theme {
-  --select-background: var(--black);
-  --select-foreground: var(--white);
-  --background-on-disabled: var(--neutral-9);
-  --foreground-on-disabled: var(--neutral-4);
-  --select-border: var(--neutral-7);
-  --select-arrows: var(--neutral-4);
-  --select-arrows-on-disabled: var(--neutral-6);
+  --select-arrows: var(--neutral-300);
+  --select-background: var(--neutral-900);
+  --select-foreground: var(--neutral-25);
+  --select-border: var(--neutral-600);
+  --select-border-on-focus: var(--focus-ring);
+  --select-arrows-on-disabled: var(--neutral-500);
+  --background-on-disabled: var(--neutral-700);
+  --foreground-on-disabled: var(--neutral-400);
+  --select-border-on-disabled: var(--neutral-600);
 }
 
 .select {
@@ -29,8 +35,8 @@
 
   width: 100%;
   margin: 0;
-  padding: var(--space-6) calc(var(--space-5) * 2 + 24px) var(--space-6)
-    var(--space-5);
+  padding: var(--select-block-space) calc(var(--select-inline-space) * 2 + 24px)
+    var(--select-block-space) var(--select-inline-space);
 
   font: inherit;
   font-size: calc(var(--font-scale) * var(--font-base-size));
@@ -50,13 +56,14 @@
 }
 
 .select:focus {
-  border-color: var(--focus-ring);
+  border-color: var(--select-border-on-focus);
 }
 
 .select[disabled] {
   cursor: not-allowed;
   color: var(--foreground-on-disabled);
   background: var(--background-on-disabled);
+  border-color: var(--select-border-on-disabled);
 }
 
 .select-container {

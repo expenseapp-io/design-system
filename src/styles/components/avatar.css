@@ -1,13 +1,13 @@
 :root {
-  --avatar-background: var(--neutral-1);
-  --avatar-foreground: var(--neutral-9);
-  --avatar-border: var(--neutral-2);
+  --avatar-background: var(--neutral-100);
+  --avatar-foreground: var(--neutral-600);
+  --avatar-border: var(--neutral-200);
 }
 
 .dark-theme {
-  --avatar-background: var(--neutral-9);
-  --avatar-foreground: var(--neutral-1);
-  --avatar-border: var(--neutral-8);
+  --avatar-background: var(--neutral-700);
+  --avatar-foreground: var(--neutral-200);
+  --avatar-border: var(--neutral-600);
 }
 
 .avatar {

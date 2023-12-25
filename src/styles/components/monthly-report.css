@@ -1,9 +1,9 @@
 :root {
-  --monthly-reports-list-divider: var(--neutral-0);
+  --monthly-reports-list-divider: var(--neutral-50);
 }
 
 .dark-theme {
-  --monthly-reports-list-divider: var(--neutral-8);
+  --monthly-reports-list-divider: var(--neutral-600);
 }
 
 .monthly-report-list {

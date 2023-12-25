@@ -1,15 +1,15 @@
 :root {
-  --emoji-circle-background: rgb(0 0 0 / 5%);
-  --emoji-circle-foreground: var(--neutral-3);
-  --emoji-circle-completed-background: #e9f7e9;
-  --emoji-circle-completed-foreground: #639863;
+  --emoji-circle-background: var(--neutral-50);
+  --emoji-circle-foreground: var(--text-secondary);
+  --emoji-circle-completed-background: var(--green-25);
+  --emoji-circle-completed-foreground: var(--green-500);
 }
 
 .dark-theme {
-  --emoji-circle-background: rgb(255 255 255 / 10%);
-  --emoji-circle-foreground: var(--neutral-6);
-  --emoji-circle-completed-background: #1d2c1d;
-  --emoji-circle-completed-foreground: #639863;
+  --emoji-circle-background: var(--neutral-600);
+  --emoji-circle-foreground: var(--text-secondary);
+  --emoji-circle-completed-background: var(--green-600);
+  --emoji-circle-completed-foreground: var(--green-300);
 }
 
 .emoji-circle,

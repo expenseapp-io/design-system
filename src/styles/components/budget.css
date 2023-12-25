@@ -1,27 +1,37 @@
 :root {
-  --progress-foreground: rgb(0 0 0 / 60%);
-  --progress-background: rgb(0 0 0 / 20%);
-  --budget-additional-list-background: var(--neutral-0);
-  --budget-additional-list-foreground: var(--neutral-7);
-  --budget-additional-list-foreground-highlighted: var(--neutral-9);
+  --progress-background: var(--neutral-100);
+  --progress-foreground: var(--neutral-500);
+  --budget-additional-list-background: var(--neutral-50);
+  --budget-additional-list-foreground: var(--text-secondary);
+  --budget-additional-list-foreground-highlighted: var(--text-primary);
+}
+
+.budget-progress-close {
+  --progress-background: var(--yellow-50);
+  --progress-foreground: var(--yellow-200);
+}
+
+.budget-progress-overspent {
+  --progress-background: var(--red-100);
+  --progress-foreground: var(--red-100);
 }
 
 .dark-theme {
   --progress-foreground: rgb(255 255 255);
   --progress-background: rgb(255 255 255 / 20%);
-  --budget-additional-list-background: rgb(0 0 0 / 30%);
-  --budget-additional-list-foreground: var(--neutral-3);
-  --budget-additional-list-foreground-highlighted: var(--neutral-0);
+  --budget-additional-list-background: var(--neutral-800);
+  --budget-additional-list-foreground: var(--text-secondary);
+  --budget-additional-list-foreground-highlighted: var(--text-primary);
 }
 
-.budget-progress-close {
-  --progress-foreground: rgb(245 195 67);
-  --progress-background: rgb(245 195 67 / 20%);
+.dark-theme .budget-progress-close {
+  --progress-background: var(--yellow-600);
+  --progress-foreground: var(--yellow-200);
 }
 
-.budget-progress-overspent {
-  --progress-foreground: rgb(234 51 35);
-  --progress-background: rgb(234 51 35 / 20%);
+.dark-theme .budget-progress-overspent {
+  --progress-background: var(--red-600);
+  --progress-foreground: var(--red-600);
 }
 
 .budget {

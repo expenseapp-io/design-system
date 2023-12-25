@@ -1,51 +1,57 @@
 @import "../abstracts/variables.css";
 
 :root {
-  --button-background: var(--neutral-9);
-  --button-foreground: var(--white);
-  --button-background-on-hover: var(--neutral-8);
-  --button-background-on-disabled: var(--neutral-1);
-  --button-foreground-on-disabled: var(--neutral-6);
+  --button-background: var(--neutral-900);
+  --button-foreground: var(--neutral-25);
+  --button-background-on-hover: var(--neutral-700);
+  --button-foreground-on-hover: var(--neutral-25);
+  --button-background-on-disabled: var(--neutral-100);
+  --button-foreground-on-disabled: var(--neutral-400);
 }
 
 .button-secondary {
-  --button-background: var(--neutral-1);
-  --button-foreground: var(--neutral-9);
-  --button-background-on-hover: var(--neutral-2);
-  --button-background-on-disabled: var(--neutral-8);
-  --button-foreground-on-disabled: var(--neutral-2);
+  --button-background: var(--neutral-100);
+  --button-foreground: var(--neutral-800);
+  --button-background-on-hover: var(--neutral-200);
+  --button-foreground-on-hover: var(--neutral-800);
+  --button-background-on-disabled: var(--neutral-100);
+  --button-foreground-on-disabled: var(--neutral-400);
 }
 
 .button-danger {
-  --button-background: #c60000;
-  --button-foreground: white;
-  --button-background-on-hover: #d90000;
-  --button-background-on-disabled: var(--neutral-8);
-  --button-foreground-on-disabled: var(--neutral-2);
+  --button-background: var(--red-500);
+  --button-foreground: var(--neutral-25);
+  --button-background-on-hover: var(--red-400);
+  --button-foreground-on-hover: var(--neutral-25);
+  --button-background-on-disabled: var(--neutral-100);
+  --button-foreground-on-disabled: var(--neutral-400);
 }
 
 .dark-theme {
-  --button-background: var(--white);
-  --button-foreground: var(--neutral-9);
-  --button-background-on-hover: var(--neutral-1);
-  --button-background-on-disabled: var(--neutral-8);
-  --button-foreground-on-disabled: var(--neutral-2);
+  --button-background: var(--neutral-25);
+  --button-foreground: var(--neutral-900);
+  --button-background-on-hover: var(--neutral-100);
+  --button-foreground-on-hover: var(--neutral-900);
+  --button-background-on-disabled: var(--neutral-600);
+  --button-foreground-on-disabled: var(--neutral-400);
 }
 
 .dark-theme .button-secondary {
-  --button-background: var(--neutral-8);
-  --button-foreground: var(--white);
-  --button-background-on-hover: var(--neutral-7);
-  --button-background-on-disabled: var(--neutral-1);
-  --button-foreground-on-disabled: var(--neutral-6);
+  --button-background: var(--neutral-600);
+  --button-foreground: var(--neutral-100);
+  --button-background-on-hover: var(--neutral-500);
+  --button-foreground-on-hover: var(--neutral-100);
+  --button-background-on-disabled: var(--neutral-600);
+  --button-foreground-on-disabled: var(--neutral-400);
 }
 
 .dark-theme .button-danger {
-  --button-background: #700;
-  --button-foreground: var(--white);
-  --button-background-on-hover: #9f0000;
-  --button-background-on-disabled: var(--neutral-1);
-  --button-foreground-on-disabled: var(--neutral-6);
+  --button-background: var(--red-500);
+  --button-foreground: var(--neutral-25);
+  --button-background-on-hover: var(--red-400);
+  --button-foreground-on-hover: var(--neutral-25);
+  --button-background-on-disabled: var(--neutral-600);
+  --button-foreground-on-disabled: var(--neutral-400);
 }
 
 /* Base button will always be a primary one */
@@ -76,6 +82,7 @@
 .button:hover,
 .button:active,
 .button:focus {
+  color: var(--button-foreground-on-hover);
   background: var(--button-background-on-hover);
 }
 

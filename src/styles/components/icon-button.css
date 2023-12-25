@@ -1,17 +1,17 @@
 @import "../abstracts/variables.css";
 
 :root {
-  --icon-button-foreground: var(--neutral-6);
-  --icon-button-background-on-hover: var(--neutral-0);
-  --icon-button-foreground-on-hover: var(--neutral-9);
-  --icon-button-background-on-disabled: var(--neutral-3);
+  --icon-button-foreground: var(--neutral-500);
+  --icon-button-background-on-hover: var(--neutral-100);
+  --icon-button-foreground-on-hover: var(--black);
+  --icon-button-background-on-disabled: var(--neutral-300);
 }
 
 .dark-theme {
-  --icon-button-foreground: var(--neutral-3);
-  --icon-button-background-on-hover: var(--neutral-8);
+  --icon-button-foreground: var(--neutral-300);
+  --icon-button-background-on-hover: var(--neutral-600);
   --icon-button-foreground-on-hover: var(--white);
-  --icon-button-background-on-disabled: var(--neutral-6);
+  --icon-button-background-on-disabled: var(--neutral-400);
 }
 
 .icon-button {

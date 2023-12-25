@@ -1,5 +1,5 @@
 :root {
-  /* Primitive colors */
+  /* Deprecated colors */
   --neutral-0: #e6e6e6;
   --neutral-1: #cfcfcf;
   --neutral-2: #b8b8b8;
@@ -10,6 +10,73 @@
   --neutral-7: #454545;
   --neutral-8: #2e2e2e;
   --neutral-9: #171717;
+
+  /* Neutral  */
+  --neutral-25: #f9f9f9;
+  --neutral-50: #f1f1f1;
+  --neutral-100: #e2e2e2;
+  --neutral-200: #ccc;
+  --neutral-300: #a5a5a5;
+  --neutral-400: #777;
+  --neutral-500: #4b4b4b;
+  --neutral-600: #2e2e2e;
+  --neutral-700: #1b1b1b;
+  --neutral-800: #111;
+  --neutral-900: #070707;
+
+  /* Red */
+  --red-25: #fef8f8;
+  --red-50: #fdeded;
+  --red-100: #fbdbdc;
+  --red-200: #f8bdbf;
+  --red-300: #f48688;
+  --red-400: #e22e38;
+  --red-500: #931a21;
+  --red-600: #5f0d12;
+  --red-700: #3d0508;
+  --red-800: #2a0304;
+  --red-900: #180102;
+
+  /* Green */
+  --green-25: #eafef1;
+  --green-50: #c7fdd9;
+  --green-100: #73fcad;
+  --green-200: #49e693;
+  --green-300: #39bc77;
+  --green-400: #278754;
+  --green-500: #155634;
+  --green-600: #0a351e;
+  --green-700: #042111;
+  --green-800: #021509;
+  --green-900: #010a04;
+
+  /* Yellow */
+  --yellow-25: #fff8f1;
+  --yellow-50: #ffeedb;
+  --yellow-100: #ffddb2;
+  --yellow-200: #ffc249;
+  --yellow-300: #d49c00;
+  --yellow-400: #997000;
+  --yellow-500: #624700;
+  --yellow-600: #3e2b00;
+  --yellow-700: #261900;
+  --yellow-800: #190f00;
+  --yellow-900: #0d0600;
+
+  /* Orange */
+  --orange-25: #fef8f6;
+  --orange-50: #fdeee9;
+  --orange-100: #fbdcd2;
+  --orange-200: #f8bfab;
+  --orange-300: #f58a4c;
+  --orange-400: #b4612d;
+  --orange-500: #743c1a;
+  --orange-600: #4a240d;
+  --orange-700: #2f1505;
+  --orange-800: #1f0c03;
+  --orange-900: #110501;
+
+  /* White & Black */
   --white: #fff;
   --black: #000;
 
@@ -34,7 +101,7 @@
   /* Semantic Colors */
 
   /* TODO: Add body-background color to primitive tokens */
-  --body-background: #f0f0f0;
+  --body-background: var(--neutral-50);
   --text-primary: var(--neutral-9);
   --text-secondary: var(--neutral-6);
   --text-disabled: var(--neutral-3);
@@ -42,7 +109,7 @@
 }
 
 .dark-theme {
-  --body-background: var(--black);
+  --body-background: var(--neutral-900);
   --text-primary: var(--white);
   --text-secondary: var(--neutral-3);
   --text-disabled: var(--neutral-3);
