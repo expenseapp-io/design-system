@@ -1,3 +1,23 @@
+# 1.14.0 (Sun Jan 14 2024)
+
+### Release Notes
+
+#### Fixes ([#96](https://github.com/expenseapp-io/design-system/pull/96))
+
+This section is for `auto` library
+
+---
+
+#### 🚀 Enhancement
+
+- Fixes [#96](https://github.com/expenseapp-io/design-system/pull/96) ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+#### Authors: 1
+
+- Pavel Keyzik ([@pavelkeyzik](https://github.com/pavelkeyzik))
+
+---
+
 # 1.13.1 (Mon Dec 25 2023)
 
 #### 🐛 Bug Fix
